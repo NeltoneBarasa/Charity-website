@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Oseko Foundation</title>
+    <meta name="description" content="Support Oseko Foundation's mission to transform lives across Africa. Make a donation to help provide clean water, healthcare, and education to underserved communities.">
+    <meta name="keywords" content="donate, Oseko Foundation, Africa, charity, clean water, healthcare, education, Bitcoin, PayPal">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>">
+    
+    <!-- Payment Scripts -->
+    <script src="https://www.paypal.com/sdk/js?client-id=AXthTNUl_C_-vulV4YhlQg_ofqzR1cu08usr8ExKjno2KXHaD-_ZiVqGbCkRwz0H0BRyNjNfxaPxt3xY"></script>
+</head>
+
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="about.html" class="logo">
+                <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
+                <span>Oseko Foundation</span>
+            </a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #4ECDC4 0%, #45B7D1 50%, #FF6B6B 100%); padding-top: 120px; padding-bottom: 80px;">
+        <div class="container text-center">
+            <h1 class="hero-title">Make a Difference Today</h1>
+            <p class="hero-subtitle">
+                Your donation helps us provide clean water, healthcare, and education to communities in need across Africa. Every contribution, no matter the size, brings hope and creates lasting change in people's lives.
+            </p>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Donation Count Display -->
+            <div class="text-center mb-8">
+                <div class="card" style="max-width: 400px; margin: 0 auto;">
+                    <h2 class="text-3xl font-bold text-primary mb-2">Total Donations</h2>
+                    <div class="text-4xl font-bold text-primary" id="donation-count">$125,000</div>
+                    <p class="text-gray-600 mt-2">and counting...</p>
+                </div>
+            </div>
+
+            <!-- Ways to Help Section -->
+            <div class="card bg-accent text-white mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-center">How Can You Help?</h2>
+                <div class="grid grid-3 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-birthday-cake text-2xl"></i>
+                        </div>
+                        <span class="font-semibold">Donate On Your Birthday</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-hands-helping text-2xl"></i>
+                        </div>
+                        <span class="font-semibold">Become a Volunteer</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-donate text-2xl"></i>
+                        </div>
+                        <span class="font-semibold">Make a Donation</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact Section -->
+<div class="section-title">
+    <h2>Choose Your Impact</h2>
+    <p class="section-subtitle">See how your donation creates lasting change</p>
+</div>
+
+<div class="grid grid-4 mb-8">
+    <div class="card text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-hand-holding-heart text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary mb-2">Any Amount</h3>
+        <p>Every contribution fuels dignity, hope, and opportunity — supporting multiple sectors of development across East Africa.</p>
+    </div>
+    <div class="card text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-utensils text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary mb-2">$100</h3>
+        <p>Provides a family with clean water and nutritious food for a month — transforming hunger into health.</p>
+    </div>
+    <div class="card text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-heartbeat text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary mb-2">$200</h3>
+        <p>Equips a rural clinic with medical tools, provides clothing, and funds vital community training programs.</p>
+    </div>
+    <div class="card text-center">
+        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-primary mb-2">$350</h3>
+        <p>Sponsors a child’s education for a year while supporting water wells, solar projects, and sustainability efforts.</p>
+    </div>
+</div>
+
+
+            <!-- Payment Methods -->
+            <div class="grid grid-2 gap-8">
+                <!-- PayPal Section -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-6 text-center">
+                        <i class="fab fa-paypal text-primary mr-2"></i>PayPal Donation
+                    </h3>
+                    <p class="text-gray-600 mb-6 text-center">Secure and easy donations through PayPal</p>
+                    
+                    <!-- Make Your Donation -->
+                    <h4 class="text-xl font-bold mb-4 text-center">Make Your Donation</h4>
+                    
+                    <!-- Quick Donation Buttons -->
+                    <div class="grid grid-3 gap-4 mb-6">
+                        <button onclick="setAmount(100)" class="btn btn-primary">Donate $100</button>
+                        <button onclick="setAmount(200)" class="btn btn-primary">Donate $200</button>
+                        <button onclick="setAmount(350)" class="btn btn-primary">Donate $350</button>
+                    </div>
+
+                    <!-- Custom Amount Input -->
+                    <div class="mb-6">
+                        <label for="custom-amount" class="block text-lg font-medium mb-2">
+                            Or enter a custom amount:
+                        </label>
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-3 font-semibold">$</span>
+                            <input 
+                                type="number" 
+                                id="custom-amount" 
+                                min="1" 
+                                step="1" 
+                                class="border-2 border-gray-300 rounded-lg p-4 w-full text-2xl 
+                                    focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                                placeholder="Enter amount">
+                        </div>
+                    </div>
+
+
+                    
+
+                    <div id="paypal-button-container"></div>
+                </div>
+
+                <!-- Bitcoin Section -->
+                <div class="card">
+                    <h3 class="text-2xl font-bold mb-4 text-center">
+                        <i class="fab fa-bitcoin text-yellow-500 mr-2"></i>Donate with Bitcoin
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-center">
+                        Enter the amount you'd like to donate in USD. We'll convert it to BTC for you.
+                    </p>
+                    <!-- Amount Input -->
+                    <div class="text-center mb-4">
+                        <input type="number" id="usdAmount" placeholder="Enter amount in USD" 
+                            class="border border-gray-300 rounded-lg px-3 py-2 w-64 text-center">
+                        <button onclick="convertToBTC()" 
+                            class="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">
+                            Convert
+                        </button>
+                    </div>
+                    <!-- Conversion Result -->
+                    <div id="btcResult" class="text-center mb-4 text-lg font-semibold text-gray-700"></div>
+                    <!-- QR + Address -->
+                    <div class="text-center">
+                        <img id="btcQR" src="https://api.qrserver.com/v1/create-qr-code/?data=bitcoin:141j6BajyXpwAYowPKoMQnDPin29CNmdDC&size=200x200" 
+                             alt="Bitcoin QR Code" 
+                             class="mx-auto mb-4 rounded-lg shadow-md">
+                        <p class="mt-3 font-mono break-all text-sm bg-gray-100 p-2 rounded-lg inline-block">
+                            141j6BajyXpwAYowPKoMQnDPin29CNmdDC
+                        </p>
+                        <button 
+                            onclick="copyBitcoinAddress()" 
+                            class="mt-3 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow">
+                            Copy Address
+                        </button>
+                    </div>
+                    <p class="text-xs text-red-500 mt-4 text-center">
+                        ⚠️ Only send BTC via the Bitcoin (BTC) network. 
+                        Do not use BEP20, ERC20, or other chains.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <div class="grid grid-2 gap-8 items-center">
+                <div>
+                    <h2>About Our Impact</h2>
+                    <p class="text-lg mb-6">
+                        Similar to a mutual fund investment, funds are managed by Charity Navigator analysts to include only the most efficient and effective charities. These funds employ a comprehensive and balanced strategy to address the core issues of the specific cause.
+                    </p>
+                    <p class="text-lg mb-6">
+                        Our group applies a range of effective approaches proven to be impactful at addressing the issue at hand. This includes an intentional mix of charities that implement evidence-based strategies, ranging from direct services to regional coalitions to national policy reform, with the resources allocated to maximize impact.
+                    </p>
+                    <p class="text-lg">
+                        Our analysts manage and assess these funds on a quarterly basis to ensure that the most highly rated and efficient charities receive your support.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://i.pinimg.com/564x/f6/9d/94/f69d947f717ce1d6b35da89e4a8af634.jpg" 
+                         alt="Our Impact" 
+                         class="rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Reporting Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card">
+                <h2 class="text-3xl font-bold mb-6 text-center">Impact Reporting</h2>
+                <p class="text-lg text-gray-600 text-center mb-6">
+                    Rest easy knowing your contributions support highly rated charities with proven outcomes, allowing you to see the meaningful difference you are making. Coming soon, as an investor in a Causeway fund, you'll receive quarterly reports on the fund's performance and its impact on your chosen cause.
+                </p>
+                <div class="text-center">
+                    <span class="inline-block bg-accent text-white px-4 py-2 rounded-full font-semibold">
+                        Expected delivery in early 2026
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oseko Foundation</h3>
+                    <p>Transforming lives across Africa through sustainable development and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/AidForHope" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/oseko_foundation?igsh=YzR3cmR5YXQ2emF6" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="healthcare.html">Healthcare</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info text-center">
+                    <p><strong>Main Office:</strong> Kampala, Uganda</p>
+                    <p><strong>NGO Reg:</strong> NGO/UG/0012345  
+                    <p>Email: <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
+                    <p class="mt-4">© 2024 Oseko Foundation. All rights reserved.</p>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="Privacy Policy.html">Privacy Policy</a>
+                    <a href="Terms of Service.html">Terms of Service</a>
+                    <a href="Donation Policy.html">Donation Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="modern-script.js"></script>
+    
+    <script>
+        const BITCOIN_ADDRESS = '141j6BajyXpwAYowPKoMQnDPin29CNmdDC';
+        
+        function setAmount(amount) {
+            document.getElementById('custom-amount').value = amount;
+            document.getElementById('usdAmount').value = amount;
+        }
+
+        function setCustomAmount() {
+            var customAmount = document.getElementById('custom-amount').value;
+            if (customAmount) {
+                document.getElementById('usdAmount').value = customAmount;
+            }
+        }
+
+        async function convertToBTC() {
+            const usd = document.getElementById("usdAmount").value;
+            if (!usd || usd <= 0) {
+                document.getElementById("btcResult").innerText = "Please enter a valid amount.";
+                return;
+            }
+            
+            try {
+                // Fetch BTC price from CoinGecko API
+                const res = await fetch("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd");
+                const data = await res.json();
+                const btcPrice = data.bitcoin.usd;
+                const btcAmount = (usd / btcPrice).toFixed(8);
+                
+                document.getElementById("btcResult").innerHTML = 
+                    `$${usd} ≈ <span class="text-yellow-600">${btcAmount} BTC</span>`;
+                
+                // Update QR code with amount
+                const qrData = `bitcoin:${BITCOIN_ADDRESS}?amount=${btcAmount}`;
+                const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?data=${encodeURIComponent(qrData)}&size=200x200`;
+                document.getElementById("btcQR").src = qrUrl;
+                
+            } catch (error) {
+                document.getElementById("btcResult").innerText = "Error fetching BTC price.";
+                console.error('Bitcoin price fetch error:', error);
+            }
+        }
+
+        function copyBitcoinAddress() {
+            navigator.clipboard.writeText(BITCOIN_ADDRESS).then(function() {
+                // Change button text temporarily
+                const button = event.target;
+                const originalText = button.innerHTML;
+                button.innerHTML = 'Copied!';
+                button.style.backgroundColor = '#10b981';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.style.backgroundColor = '#eab308';
+                }, 2000);
+                
+            }).catch(function(err) {
+                alert('Failed to copy address. Please copy manually: ' + BITCOIN_ADDRESS);
+            });
+        }
+
+        // PayPal integration
+        paypal.Buttons({
+            createOrder: function (data, actions) {
+                const amount = document.getElementById('custom-amount').value || 100;
+                return actions.order.create({
+                    purchase_units: [{
+                        amount: {
+                            value: amount.toString()
+                        }
+                    }]
+                });
+            },
+            onApprove: function (data, actions) {
+                return actions.order.capture().then(function (details) {
+                    alert('Transaction completed by ' + details.payer.name.given_name + '. Thank you for your donation!');
+                });
+            }
+        }).render('#paypal-button-container');
+    </script>
+    
+    <!-- Additional Styles for Donate Page -->
+    <style>
+        .nav-link.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .primary-100 {
+            background-color: rgba(45, 91, 255, 0.1);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .text-warning {
+            color: var(--accent);
+        }
+        
+        .text-yellow-500 {
+            color: #eab308;
+        }
+        
+        .text-yellow-600 {
+            color: #ca8a04;
+        }
+        
+        .bg-yellow-500 {
+            background-color: #eab308;
+        }
+        
+        .bg-yellow-600 {
+            background-color: #ca8a04;
+        }
+        
+        .bg-blue-600 {
+            background-color: #2563eb;
+        }
+        
+        .bg-blue-700 {
+            background-color: #1d4ed8;
+        }
+        
+        .text-red-500 {
+            color: #ef4444;
+        }
+        
+        .bg-accent {
+            background-color: var(--accent);
+        }
+        
+        .bg-primary-100 {
+            background-color: rgba(45, 91, 255, 0.1);
+        }
+        
+        .border {
+            border-width: 1px;
+        }
+        
+        .border-gray-300 {
+            border-color: #d1d5db;
+        }
+        
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+        
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+        
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+        
+        .w-64 {
+            width: 16rem;
+        }
+        
+        .ml-2 {
+            margin-left: 0.5rem;
+        }
+        
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .break-all {
+            word-break: break-all;
+        }
+        
+        .font-mono {
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
+        
+        .inline-block {
+            display: inline-block;
+        }
+        
+        .p-2 {
+            padding: 0.5rem;
+        }
+        
+        .mt-3 {
+            margin-top: 0.75rem;
+        }
+        
+        .text-xs {
+            font-size: 0.75rem;
+        }
+        
+        .shadow {
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        }
+        
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        
+        @media (max-width: 768px) {
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .w-64 {
+                width: 100%;
+                max-width: 16rem;
+            }
+        }
+    </style>
+<script src="main.js"></script>
+</body>
+</html>

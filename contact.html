@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Oseko Foundation</title>
+    <meta name="description" content="Get in touch with Oseko Foundation. Contact us for questions, partnerships, or to learn more about our work transforming lives across Africa.">
+    <meta name="keywords" content="contact, Oseko Foundation, Africa, charity, partnership, volunteer, get involved">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>">
+</head>
+
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="about.html" class="logo">
+                <img src=".images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
+                <span>Oseko Foundation</span>
+            </a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
+            </ul>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #4ECDC4 0%, #45B7D1 50%, #FF6B6B 100%); padding-top: 120px; padding-bottom: 80px;">
+        <div class="container text-center">
+            <h1 class="hero-title">Get in Touch</h1>
+            <p class="hero-subtitle">
+                We would love to hear from you! Whether you have questions, want to partner with us, or are interested in volunteering, we're here to help.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2 gap-8 items-start">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h2 class="text-3xl font-bold mb-6 text-center">Send us a Message</h2>
+    <form action="send_email.php" method="post" class="space-y-6">
+        <div class="flex flex-col">
+                            <label for="name" class="text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-user mr-2 text-primary"></i>Name
+                            </label>
+                            <input type="text" id="name" name="name" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition duration-300" placeholder="Your Name" required>
+        </div>
+        <div class="flex flex-col">
+                            <label for="email" class="text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-envelope mr-2 text-primary"></i>Email
+                            </label>
+                            <input type="email" id="email" name="email" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition duration-300" placeholder="Your Email" required>
+        </div>
+        <div class="flex flex-col">
+                            <label for="message" class="text-gray-700 font-semibold mb-2">
+                                <i class="fas fa-comment mr-2 text-primary"></i>Message
+                            </label>
+                            <textarea id="message" name="message" rows="5" class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition duration-300" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-large">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+        </div>
+    </form>
+</div>
+
+                <!-- Contact Information -->
+                <div class="space-y-6">
+                    <div class="card">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Address</h4>
+                                    <p class="text-gray-600">28 Walpole Street, Freetown<br>Sierra Leone</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-600">info@osekofoundation.org</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-id-card text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Tax Information</h4>
+                                    <p class="text-gray-600">EIN 13-4148824<br>Bridge ID 3108588923</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-2xl font-bold mb-6">Follow Us</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://x.com/AidForHope" class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/hopegivers_africa" class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition duration-300">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Offices -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Regional Offices</h2>
+                <p class="section-subtitle">We meet, plan, and coordinate locally across East Africa.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="card">
+                    <h3>🇰🇪 Kenya Office</h3>
+                    <p class="mb-3">Western Kenya (Program Hub)</p>
+                    <ul>
+                        <li>Community planning meetings</li>
+                        <li>Education and environment coordination</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🇺🇬 Uganda Office</h3>
+                    <p class="mb-3">Kampala (Verified CBO)</p>
+                    <ul>
+                        <li>NGO Coordination Board verified Community Based Organization</li>
+                        <li>Healthcare and water access programs</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🇹🇿 Tanzania Office</h3>
+                    <p class="mb-3">Arusha Region</p>
+                    <ul>
+                        <li>Water and community resilience projects</li>
+                        <li>Local partner engagement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oseko Foundation</h3>
+                    <p>Transforming lives across Africa through sustainable development and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/AidForHope" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/oseko_foundation?igsh=YzR3cmR5YXQ2emF6" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="healthcare.html">Healthcare</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info text-center">
+                    <p><strong>Main Office:</strong> Kampala, Uganda</p>
+                    <p><strong>NGO Reg:</strong> NGO/UG/0012345  
+                    <p>Email: <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
+                    <p class="mt-4">© 2024 Oseko Foundation. All rights reserved.</p>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="Privacy Policy.html">Privacy Policy</a>
+                    <a href="Terms of Service.html">Terms of Service</a>
+                    <a href="Donation Policy.html">Donation Policy</a>
+                </div>
+            </div>
+    </div>
+</footer>
+
+    <!-- JavaScript -->
+    <script src="modern-script.js"></script>
+    
+    <!-- Additional Styles for Contact Page -->
+<style>
+        .nav-link.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+        
+        .nav-link.active::after {
+            width: 100%;
+        }
+        
+        .btn-large {
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+        }
+        
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .primary-100 {
+            background-color: rgba(45, 91, 255, 0.1);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .bg-primary-100 {
+            background-color: rgba(45, 91, 255, 0.1);
+        }
+        
+        .space-y-4 > * + * {
+            margin-top: 1rem;
+        }
+        
+        .space-y-6 > * + * {
+            margin-top: 1.5rem;
+        }
+        
+@media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+    }
+}
+</style>
+<script src="main.js"></script>
+</body>
+</html>

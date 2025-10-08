@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Outreach - Oseko foundation</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <style>
+    body { font-family: 'Arial', sans-serif; padding-top: 64px; }
+    .hero-bg { background-size: cover; background-position: center; }
+    .overlay { background-color: rgba(0, 0, 0, 0.5); }
+    .font-fancy { font-family: 'Playfair Display', serif; }
+    .text-green-dark { color: #1b5e20; }
+    .bg-green-main { background-color: #2e7d32; }
+    .bg-green-hover:hover { background-color: #1b5e20; }
+  </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white text-gray-800 p-4 shadow-md fixed top-0 left-0 right-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="flex items-center">
+        <img src="https://openui.fly.dev/openui/24x24.svg?text=🤝" alt="logo" class="h-10 w-10 rounded-full border-2 border-green-main" />
+        <a href="index.html" class="text-4xl font-bold text-green-main ml-2" style="font-family: 'Dancing Script', cursive;">Oseko Foundation</a>
+      </div>
+      <div class="space-x-8 ml-auto">
+        <a href="index.html" class="text-xl font-semibold text-gray-800 hover:text-green-main" style="font-family: 'Great Vibes', cursive;">Home</a>
+        <a href="about.html" class="text-xl font-semibold text-gray-800 hover:text-green-main" style="font-family: 'Great Vibes', cursive;">About</a>
+        <a href="donate.html" class="bg-green-main text-white text-xl px-4 py-2 rounded-full hover:bg-green-700 transition duration-300" style="font-family: 'Great Vibes', cursive;">Donate</a>
+        <a href="contact.html" class="text-xl font-semibold text-gray-800 hover:text-green-main" style="font-family: 'Great Vibes', cursive;">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section h-screen flex items-center justify-center bg-green-50">
+    <div class="flex flex-col md:flex-row items-center max-w-5xl mx-auto p-6 gap-8">
+      <div class="md:w-2/3 text-center md:text-left">
+        <h1 class="text-5xl md:text-6xl font-fancy font-bold text-green-dark mb-6">Empowering Communities for a Brighter Future</h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8">Hope Givers partners with local communities to ensure lasting change through education, health, and development initiatives.</p>
+        <a href="donate.html" class="bg-green-main text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-green-700 transition duration-300 ease-in-out text-lg md:text-xl">Get Involved</a>
+      </div>
+      <div class="md:w-1/3 flex justify-center">
+        <img src="https://i.pinimg.com/564x/20/45/96/204596064af2e8e9ad8ceac54b67be20.jpg" alt="Empowered Community" class="rounded-full w-64 h-64 shadow-lg">
+      </div>
+    </div>
+  </header>
+
+  <!-- Our Impact Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-4xl font-fancy font-bold text-green-dark mb-6 text-center">Our Impact on Communities</h2>
+      <p class="text-xl text-gray-700 mb-12 text-center max-w-2xl mx-auto">We work hand in hand with communities to create sustainable solutions that empower children and families to thrive. From education to health and economic development, our community programs are building brighter futures.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="bg-white p-8 shadow-lg rounded-lg transition-transform transform hover:scale-105 border-t-4 border-green-main">
+          <img src="https://i.pinimg.com/564x/a2/2f/fc/a22ffcd59a108a48ababf0bec3cbbb1d.jpg" alt="Community Development" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-fancy font-bold text-green-main mb-4">Education for All</h3>
+          <p class="text-lg text-gray-700">Through our programs, we’ve built schools, trained teachers, and supplied learning materials to ensure every child has access to quality education, especially in rural areas.</p>
+        </div>
+        <div class="bg-white p-8 shadow-lg rounded-lg transition-transform transform hover:scale-105 border-t-4 border-green-main">
+          <img src="https://i.pinimg.com/564x/3d/b5/ff/3db5ffba5c3077d861d6014f0122d0e3.jpg" alt="Healthcare Outreach" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-fancy font-bold text-green-main mb-4">Health & Nutrition</h3>
+          <p class="text-lg text-gray-700">Our health outreach services bring life-saving medical care, vaccines, and nutritious food to vulnerable communities, ensuring that children grow up healthy and strong.</p>
+        </div>
+        <div class="bg-white p-8 shadow-lg rounded-lg transition-transform transform hover:scale-105 border-t-4 border-green-main">
+          <img src="https://i.pinimg.com/564x/e9/55/24/e95524d958d92b91b093b10d23e13620.jpg" alt="Economic Empowerment" class="rounded-lg mb-6">
+          <h3 class="text-2xl font-fancy font-bold text-green-main mb-4">Economic Empowerment</h3>
+          <p class="text-lg text-gray-700">By supporting local entrepreneurship and providing vocational training, we help families build sustainable livelihoods and lift themselves out of poverty.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer Section -->
+  <section class="py-16 bg-green-50 text-gray-800 text-center">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-extrabold mb-6 font-serif text-green-dark">Become a Volunteer</h2>
+      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+        We believe that change starts with people like you. Whether you're passionate about teaching, healthcare, or community development, we welcome your time, talent, and dedication to make a lasting difference in the lives of children.
+      </p>
+      <a href="donate.html" class="bg-green-main text-white px-10 py-5 rounded-full font-bold uppercase tracking-wide hover:bg-green-700 transition duration-300 ease-in-out text-xl shadow-lg">
+        Support Us
+      </a>
+    </div>
+  </section>
+
+  <!-- Community Stories Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 md:px-12">
+      <h2 class="text-4xl font-fancy font-bold text-green-dark mb-12 text-center">Stories from the Field</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div class="bg-white p-8 shadow-md rounded-lg border-l-4 border-green-main">
+          <div class="overflow-hidden rounded-full w-48 h-48 mx-auto mb-6">
+            <img src="https://i.pinimg.com/564x/9d/5d/a1/9d5da1c238f57e5aa0aab44a86febdc5.jpg" alt="Child Learning" class="object-cover w-full h-full"> 
+          </div>
+          <h3 class="text-2xl font-bold text-green-main mb-4">A Brighter Future through Education</h3>
+          <p class="text-lg text-gray-700">In rural Uganda, Oseko foundation has transformed education access. With new classrooms and teacher training, children like Amina now have the opportunity to learn and achieve their dreams.</p>
+        </div>
+        <div class="bg-white p-8 shadow-md rounded-lg border-l-4 border-green-main">
+          <div class="overflow-hidden rounded-full w-48 h-48 mx-auto mb-6">
+            <img src="https://i.pinimg.com/564x/a2/bb/96/a2bb96343695027d8bb521bd4b0e233c.jpg" alt="Healthcare Worker" class="object-cover w-full h-full"> 
+          </div>
+          <h3 class="text-2xl font-bold text-green-main mb-4">Lifesaving Health Interventions</h3>
+          <p class="text-lg text-gray-700">In the hardest-to-reach corners of the world, our health workers deliver lifesaving vaccines, nutrition, and care to ensure children grow up healthy and strong.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="py-12 bg-green-main text-white text-center">
+    <h2 class="text-4xl font-bold mb-6">Be Part of the Change</h2>
+    <p class="text-xl mb-8">Whether it’s through donating, volunteering, or spreading the word, your support helps us create lasting change in communities around the world.</p>
+    <a href="donate.html" class="bg-white text-green-main px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-gray-200 transition duration-300 ease-in-out text-xl">Donate Today</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6">
+    <div class="container mx-auto text-center">
+      <p class="mb-4 text-lg font-semibold">&copy; Oseko Foundation. All rights reserved.</p>
+      <p class="text-sm">Kampala, Uganda</p>
+      <p><strong>NGO Reg:</strong> NGO/UG/0012345</p>
+      <p>Email: <a href="mailto:info@osekofoundation.org" class="hover:underline text-green-main">info@osekofoundation.org</a></p>
+      <p class="mt-4">© 2024 Oseko Foundation. All rights reserved.</p>
+      <nav class="flex justify-center space-x-6 mb-4">
+        <a href="Terms of Service.html" class="hover:underline transition duration-300">Terms of Service</a>
+        <a href="Privacy Policy.html" class="hover:underline transition duration-300">Privacy Policy</a>
+      </nav>
+      <p class="text-sm">Follow us on 
+        <a href="https://x.com/AidForHope?t=GKd2uoDmIb8FOhAVf0lboQ&s=09" class="hover:underline flex items-center space-x-1 transition duration-300">
+          <i class="fa-brands fa-x-twitter"></i>
+          <span>X</span>
+        </a> and 
+        <a href="https://www.instagram.com/oseko_foundation?igsh=YzR3cmR5YXQ2emF6" class="hover:underline flex items-center space-x-1 transition duration-300">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
