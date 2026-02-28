@@ -29,7 +29,7 @@
     <!-- Modern Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="about.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
                 <span>Oseko Foundation</span>
             </a>
@@ -43,31 +43,94 @@
             <ul class="nav-menu">
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(135deg, #4ECDC4 0%, #45B7D1 50%, #FF6B6B 100%); padding-top: 120px; padding-bottom: 80px;">
-        <div class="container text-center">
-            <h1 class="hero-title">Make a Difference Today</h1>
-            <p class="hero-subtitle">
-                Your donation helps us provide clean water, healthcare, and education to communities in need across Africa. Every contribution, no matter the size, brings hope and creates lasting change in people's lives.
-            </p>
+    <!-- Enhanced Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); padding-top: 120px; padding-bottom: 80px; position: relative; overflow: hidden;">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-animation" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; opacity: 0.1;">
+            <div class="floating-heart" style="position: absolute; left: 10%; animation: float 6s ease-in-out infinite; font-size: 2rem;">❤️</div>
+            <div class="floating-heart" style="position: absolute; left: 20%; animation: float 8s ease-in-out infinite 1s; font-size: 1.5rem;">💙</div>
+            <div class="floating-heart" style="position: absolute; left: 30%; animation: float 7s ease-in-out infinite 2s; font-size: 1.8rem;">💚</div>
+            <div class="floating-heart" style="position: absolute; left: 40%; animation: float 9s ease-in-out infinite 3s; font-size: 2.2rem;">❤️</div>
+            <div class="floating-heart" style="position: absolute; left: 50%; animation: float 6s ease-in-out infinite 4s; font-size: 1.6rem;">💙</div>
+            <div class="floating-heart" style="position: absolute; left: 60%; animation: float 8s ease-in-out infinite 5s; font-size: 2rem;">💚</div>
+            <div class="floating-heart" style="position: absolute; left: 70%; animation: float 7s ease-in-out infinite 6s; font-size: 1.4rem;">❤️</div>
+            <div class="floating-heart" style="position: absolute; left: 80%; animation: float 9s ease-in-out infinite 7s; font-size: 1.9rem;">💙</div>
+            <div class="floating-heart" style="position: absolute; left: 90%; animation: float 6s ease-in-out infinite 8s; font-size: 1.7rem;">💚</div>
+        </div>
+        
+        <div class="container text-center" style="position: relative; z-index: 10;">
+            <div class="hero-content-animate" style="animation: fadeInUp 1s ease-out;">
+                <h1 class="hero-title" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Make a Difference Today</h1>
+                <div class="urgent-stats" style="background: rgba(255,255,255,0.15); border-radius: 15px; padding: 1.5rem; margin: 2rem auto; max-width: 500px; backdrop-filter: blur(10px); animation: fadeInUp 1s ease-out 0.2s both;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #ff6b6b; margin-bottom: 0.5rem;">785 Million</div>
+                    <div style="font-size: 1.2rem; color: white; margin-bottom: 1rem;">people face chronic hunger in Africa</div>
+                    <div style="font-size: 1.1rem; color: rgba(255,255,255,0.9); font-style: italic;">"Your gift means one less child goes to bed hungry tonight"</div>
+                </div>
+                <p class="hero-subtitle" style="font-size: 1.3rem; line-height: 1.8; max-width: 600px; margin: 0 auto 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); animation: fadeInUp 1s ease-out 0.4s both;">
+                    Your donation helps us provide clean water, healthcare, and education to communities in need across Africa. Every contribution, no matter the size, brings hope and creates lasting change in people's lives.
+                </p>
+                <div class="hero-buttons" style="animation: fadeInUp 1s ease-out 0.6s both; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#donation-methods" class="btn btn-accent btn-large" style="background: white; color: #667eea; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2); display: inline-block;">
+                        <i class="fas fa-hand-holding-heart mr-2"></i>Give Food Now
+                    </a>
+                    <a href="#impact-section" class="btn btn-secondary btn-large" style="background: transparent; color: white; border: 2px solid white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; text-decoration: none; transition: all 0.3s ease; display: inline-block;">
+                        <i class="fas fa-chart-line mr-2"></i>See Impact
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Donation Section -->
-    <section class="section">
+    <!-- Enhanced Donation Section -->
+    <section id="donation-methods" class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);">
         <div class="container">
             <!-- Donation Count Display -->
-            <div class="text-center mb-8">
-                <div class="card" style="max-width: 400px; margin: 0 auto;">
-                    <h2 class="text-3xl font-bold text-primary mb-2">Total Donations</h2>
-                    <div class="text-4xl font-bold text-primary" id="donation-count">$125,000</div>
-                    <p class="text-gray-600 mt-2">and counting...</p>
+            <div class="text-center mb-12" style="animation: slideInUp 0.8s ease-out;">
+                <div class="card" style="max-width: 500px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 3rem; box-shadow: 0 20px 40px rgba(0,0,0,0.15); position: relative; overflow: hidden;">
+                    <!-- Animated Background Pattern -->
+                    <div class="counter-bg-pattern" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);"></div>
+                    
+                    <div style="position: relative; z-index: 10;">
+                        <div class="counter-icon" style="width: 80px; height: 80px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; animation: pulse 2s infinite;">
+                            <i class="fas fa-heart" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-white mb-2" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Total Donations</h2>
+                        <div class="text-5xl font-bold text-white mb-2" id="donation-count" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.4); position: relative; animation: countUp 2s ease-out;">
+                            $125,000
+                            <div class="count-glow" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent); animation: shimmer 2s infinite;"></div>
+                        </div>
+                        <p class="text-white text-lg" style="opacity: 0.9; font-weight: 500;">and counting...</p>
+                        
+                        <!-- Live Statistics -->
+                        <div class="live-stats-container" style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                            <h3 class="text-white text-xl font-bold mb-4">Live Impact Statistics</h3>
+                            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;">
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; color: white;" data-target="5000">5,000+</div>
+                                    <div class="stat-label" style="font-size: 0.8rem; color: rgba(255,255,255,0.8);">Lives Impacted</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; color: white;" data-target="50">50+</div>
+                                    <div class="stat-label" style="font-size: 0.8rem; color: rgba(255,255,255,0.8);">Communities</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; color: white;" data-target="3">3</div>
+                                    <div class="stat-label" style="font-size: 0.8rem; color: rgba(255,255,255,0.8);">Countries</div>
+                                </div>
+                                <div class="stat-item" style="text-align: center;">
+                                    <div class="stat-number" style="font-size: 1.5rem; font-weight: 700; color: white;" data-target="25">25+</div>
+                                    <div class="stat-label" style="font-size: 0.8rem; color: rgba(255,255,255,0.8);">Projects/yr</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -96,166 +159,244 @@
                 </div>
             </div>
 
-            <!-- Impact Section -->
-<div class="section-title">
-    <h2>Choose Your Impact</h2>
-    <p class="section-subtitle">See how your donation creates lasting change</p>
-</div>
+            <!-- Enhanced Impact Section -->
+            <div id="impact-section" class="section-title" style="animation: fadeInUp 0.8s ease-out 0.2s both;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Choose Your Impact</h2>
+                <p class="section-subtitle" style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">See how your donation creates lasting change across East Africa</p>
+            </div>
 
-<div class="grid grid-4 mb-8">
-    <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-hand-holding-heart text-primary text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primary mb-2">Any Amount</h3>
-        <p>Every contribution fuels dignity, hope, and opportunity — supporting multiple sectors of development across East Africa.</p>
-    </div>
-    <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-utensils text-primary text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primary mb-2">$100</h3>
-        <p>Provides a family with clean water and nutritious food for a month — transforming hunger into health.</p>
-    </div>
-    <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-heartbeat text-primary text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primary mb-2">$200</h3>
-        <p>Equips a rural clinic with medical tools, provides clothing, and funds vital community training programs.</p>
-    </div>
-    <div class="card text-center">
-        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <i class="fas fa-graduation-cap text-primary text-2xl"></i>
-        </div>
-        <h3 class="text-2xl font-bold text-primary mb-2">$350</h3>
-        <p>Sponsors a child’s education for a year while supporting water wells, solar projects, and sustainability efforts.</p>
-    </div>
-</div>
+            <div class="grid grid-4 mb-8">
+                <div class="card text-center impact-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                    <div style="position: relative; z-index: 10;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fas fa-hand-holding-heart text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">Any Amount</h3>
+                        <p style="color: #4b5563; line-height: 1.6;">Every contribution fuels dignity, hope, and opportunity — supporting multiple sectors of development across East Africa.</p>
+                        <div class="impact-metrics" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                            <div style="font-size: 0.9rem; color: #10b981; font-weight: 600;">✓ Immediate Impact</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center impact-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                    <div style="position: relative; z-index: 10;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fas fa-utensils text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">$100</h3>
+                        <p style="color: #4b5563; line-height: 1.6;">Provides a family with clean water and nutritious food for a month — transforming hunger into health.</p>
+                        <div class="impact-metrics" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                            <div style="font-size: 0.9rem; color: #10b981; font-weight: 600;">✓ 1 Family Fed</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center impact-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                    <div style="position: relative; z-index: 10;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-red-500 to-yellow-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fas fa-heartbeat text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">$200</h3>
+                        <p style="color: #4b5563; line-height: 1.6;">Equips a rural clinic with medical tools, provides clothing, and funds vital community training programs.</p>
+                        <div class="impact-metrics" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                            <div style="font-size: 0.9rem; color: #10b981; font-weight: 600;">✓ 5 Lives Saved</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card text-center impact-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                    <div style="position: relative; z-index: 10;">
+                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="fas fa-graduation-cap text-white text-3xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-primary mb-2">$350</h3>
+                        <p style="color: #4b5563; line-height: 1.6;">Sponsors a child's education for a year while supporting water wells, solar projects, and sustainability efforts.</p>
+                        <div class="impact-metrics" style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e5e7eb;">
+                            <div style="font-size: 0.9rem; color: #10b981; font-weight: 600;">✓ 1 Child Educated</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-
-            <!-- Payment Methods -->
+            <!-- Enhanced Payment Methods -->
             <div class="grid grid-2 gap-8">
-                <!-- PayPal Section -->
-                <div class="card">
-                    <h3 class="text-2xl font-bold mb-6 text-center">
-                        <i class="fab fa-paypal text-primary mr-2"></i>PayPal Donation
-                    </h3>
-                    <p class="text-gray-600 mb-6 text-center">Secure and easy donations through PayPal</p>
+                <!-- Enhanced PayPal Section -->
+                <div class="card" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 35px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                    <div class="payment-header" style="text-align: center; margin-bottom: 2rem;">
+                        <div class="payment-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #0070ba 0%, #00457c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <i class="fab fa-paypal text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2" style="color: #2d3748;">PayPal Donation</h3>
+                        <p style="color: #718096; font-size: 1.1rem;">Secure and easy donations through PayPal</p>
+                        <div class="trust-badges" style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                            <span style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">SSL Secure</span>
+                            <span style="background: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">Verified</span>
+                        </div>
+                    </div>
                     
                     <!-- Make Your Donation -->
-                    <h4 class="text-xl font-bold mb-4 text-center">Make Your Donation</h4>
+                    <h4 class="text-xl font-bold mb-4 text-center" style="color: #2d3748;">Make Your Donation</h4>
                     
                     <!-- Quick Donation Buttons -->
-                    <div class="grid grid-3 gap-4 mb-6">
-                        <button onclick="setAmount(100)" class="btn btn-primary">Donate $100</button>
-                        <button onclick="setAmount(200)" class="btn btn-primary">Donate $200</button>
-                        <button onclick="setAmount(350)" class="btn btn-primary">Donate $350</button>
+                    <div class="grid grid-3 gap-3 mb-6">
+                        <button onclick="setAmount(100)" class="btn btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">Donate $100</button>
+                        <button onclick="setAmount(200)" class="btn btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">Donate $200</button>
+                        <button onclick="setAmount(350)" class="btn btn-primary" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; padding: 0.75rem 1rem; border-radius: 10px; font-weight: 600; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);">Donate $350</button>
                     </div>
 
                     <!-- Custom Amount Input -->
                     <div class="mb-6">
-                        <label for="custom-amount" class="block text-lg font-medium mb-2">
+                        <label for="custom-amount" class="block text-lg font-medium mb-2" style="color: #2d3748;">
                             Or enter a custom amount:
                         </label>
-                        <div class="flex items-center">
-                            <span class="text-2xl mr-3 font-semibold">$</span>
+                        <div class="flex items-center" style="position: relative;">
+                            <span class="text-2xl mr-3 font-semibold" style="color: #667eea; position: absolute; left: 1rem; z-index: 10;">$</span>
                             <input 
                                 type="number" 
                                 id="custom-amount" 
                                 min="1" 
                                 step="1" 
-                                class="border-2 border-gray-300 rounded-lg p-4 w-full text-2xl 
-                                    focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                                class="border-2 border-gray-300 rounded-lg p-4 w-full text-2xl pl-8 focus:outline-none focus:ring-2 focus:ring-primary transition duration-300"
+                                style="border-color: #e5e7eb; border-radius: 12px;"
                                 placeholder="Enter amount">
                         </div>
                     </div>
 
+                    <div id="paypal-button-container" style="min-height: 50px;"></div>
+                </div>
 
+                <!-- Enhanced Bitcoin Section -->
+                <div class="card" style="background: white; border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 35px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                    <div class="payment-header" style="text-align: center; margin-bottom: 2rem;">
+                        <div class="payment-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #f7931a 0%, #fbbf24 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; box-shadow: 0 4px 15px rgba(247, 147, 26, 0.3);">
+                            <i class="fab fa-bitcoin text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2" style="color: #2d3748;">Donate with Bitcoin</h3>
+                        <p style="color: #718096; font-size: 1.1rem;">Enter amount you'd like to donate in USD. We'll convert it to BTC for you.</p>
+                        <div class="trust-badges" style="display: flex; justify-content: center; gap: 1rem; margin-top: 1rem;">
+                            <span style="background: #f7931a; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">Instant Conversion</span>
+                            <span style="background: #10b981; color: white; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600;">Secure</span>
+                        </div>
+                    </div>
                     
-
-                    <div id="paypal-button-container"></div>
-                </div>
-
-                <!-- Bitcoin Section -->
-                <div class="card">
-                    <h3 class="text-2xl font-bold mb-4 text-center">
-                        <i class="fab fa-bitcoin text-yellow-500 mr-2"></i>Donate with Bitcoin
-                    </h3>
-                    <p class="text-gray-600 mb-4 text-center">
-                        Enter the amount you'd like to donate in USD. We'll convert it to BTC for you.
-                    </p>
                     <!-- Amount Input -->
-                    <div class="text-center mb-4">
-                        <input type="number" id="usdAmount" placeholder="Enter amount in USD" 
-                            class="border border-gray-300 rounded-lg px-3 py-2 w-64 text-center">
-                        <button onclick="convertToBTC()" 
-                            class="ml-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg">
-                            Convert
-                        </button>
+                    <div class="text-center mb-4" style="background: #f8fafc; border-radius: 12px; padding: 1.5rem;">
+                        <label style="display: block; margin-bottom: 1rem; font-weight: 600; color: #2d3748;">Enter Amount (USD)</label>
+                        <div style="display: flex; align-items: center; justify-content: center; gap: 1rem;">
+                            <div style="position: relative; flex: 1;">
+                                <span style="position: absolute; left: 1rem; top: 50%; transform: translateY(-50%); color: #f7931a; font-weight: 600; z-index: 10;">$</span>
+                                <input type="number" id="usdAmount" placeholder="50" min="1" 
+                                    style="border: 2px solid #e5e7eb; border-radius: 12px; padding: 0.75rem 1rem 0.75rem 3rem; font-size: 1.2rem; width: 200px; text-align: center; outline: none;"
+                                    onfocus="this.style.borderColor='#f7931a';"
+                                    onblur="this.style.borderColor='#e5e7eb;'">
+                            </div>
+                            <button onclick="convertToBTC()" 
+                                style="background: linear-gradient(135deg, #f7931a 0%, #fbbf24 100%); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 12px; font-weight: 600; cursor: pointer; box-shadow: 0 4px 15px rgba(247, 147, 26, 0.3);">
+                                <i class="fas fa-exchange-alt mr-2"></i>Convert
+                            </button>
+                        </div>
                     </div>
+                    
                     <!-- Conversion Result -->
-                    <div id="btcResult" class="text-center mb-4 text-lg font-semibold text-gray-700"></div>
-                    <!-- QR + Address -->
-                    <div class="text-center">
-                        <img id="btcQR" src="https://api.qrserver.com/v1/create-qr-code/?data=bitcoin:141j6BajyXpwAYowPKoMQnDPin29CNmdDC&size=200x200" 
-                             alt="Bitcoin QR Code" 
-                             class="mx-auto mb-4 rounded-lg shadow-md">
-                        <p class="mt-3 font-mono break-all text-sm bg-gray-100 p-2 rounded-lg inline-block">
-                            141j6BajyXpwAYowPKoMQnDPin29CNmdDC
-                        </p>
-                        <button 
-                            onclick="copyBitcoinAddress()" 
-                            class="mt-3 px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-lg shadow">
-                            Copy Address
+                    <div id="btcResult" class="text-center mb-4" style="background: #fef3c7; border-radius: 12px; padding: 1rem; min-height: 60px; display: flex; align-items: center; justify-content: center;">
+                        <div style="color: #92400e; font-weight: 600; font-size: 1.1rem;">Enter amount to see conversion</div>
+                    </div>
+                    
+                    <!-- QR Code Section -->
+                    <div class="qr-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); border-radius: 15px; padding: 2rem; text-align: center;">
+                        <div style="margin-bottom: 1.5rem;">
+                            <img id="btcQR" src="https://api.qrserver.com/v1/create-qr-code/?data=bitcoin:141j6BajyXpwAYowPKoMQnDPin29CNmdDC&size=200x200" 
+                                 alt="Bitcoin QR Code" 
+                                 style="border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.1); background: white; padding: 1rem;">
+                        </div>
+                        <div style="background: white; border-radius: 12px; padding: 1rem; margin-bottom: 1.5rem;">
+                            <p style="font-family: 'Courier New', monospace; font-size: 0.9rem; color: #2d3748; word-break: break-all; margin: 0;">141j6BajyXpwAYowPKoMQnDPin29CNmdDC</p>
+                        </div>
+                        <button onclick="copyBitcoinAddress()" 
+                            style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 12px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); width: 100%;">
+                            <i class="fas fa-copy mr-2"></i>Copy Bitcoin Address
                         </button>
                     </div>
-                    <p class="text-xs text-red-500 mt-4 text-center">
-                        ⚠️ Only send BTC via the Bitcoin (BTC) network. 
-                        Do not use BEP20, ERC20, or other chains.
-                    </p>
+                    
+                    <div style="background: #fef2f2; border-left: 4px solid #ef4444; padding: 1rem; margin-top: 1.5rem; border-radius: 0 8px 8px 0;">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; color: #ef4444; font-weight: 600; margin-bottom: 0.5rem;">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Important Security Notice</span>
+                        </div>
+                        <p style="color: #718096; font-size: 0.9rem; line-height: 1.6;">Only send BTC via the Bitcoin (BTC) network. Do not use BEP20, ERC20, or other blockchain networks to avoid permanent loss.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section bg-gray-100">
-        <div class="container">
-            <div class="grid grid-2 gap-8 items-center">
-                <div>
-                    <h2>About Our Impact</h2>
-                    <p class="text-lg mb-6">
-                        Similar to a mutual fund investment, funds are managed by Charity Navigator analysts to include only the most efficient and effective charities. These funds employ a comprehensive and balanced strategy to address the core issues of the specific cause.
-                    </p>
-                    <p class="text-lg mb-6">
-                        Our group applies a range of effective approaches proven to be impactful at addressing the issue at hand. This includes an intentional mix of charities that implement evidence-based strategies, ranging from direct services to regional coalitions to national policy reform, with the resources allocated to maximize impact.
-                    </p>
-                    <p class="text-lg">
-                        Our analysts manage and assess these funds on a quarterly basis to ensure that the most highly rated and efficient charities receive your support.
-                    </p>
+            <!-- Enhanced About Impact Section -->
+            <section class="section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 80px 0;">
+                <div class="container">
+                    <div class="section-title text-center mb-12">
+                        <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">About Our Impact</h2>
+                        <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">How we maximize your donation's effectiveness across Africa</p>
+            <div class="grid grid-2 gap-12 items-center">
+                <div class="impact-content">
+                    <div class="feature-card" style="background: white; border-radius: 20px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                        <div class="feature-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-chart-line text-white text-2xl"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #2d3748;">Strategic Fund Management</h3>
+                        <p style="color: #4b5563; line-height: 1.7; margin-bottom: 1rem;">
+                            Similar to a mutual fund investment, funds are managed by Charity Navigator analysts to include only the most efficient and effective charities. These funds employ a comprehensive and balanced strategy to address the core issues of the specific cause.
+                        </p>
+                        <div class="impact-stats" style="display: flex; gap: 2rem; margin-top: 1.5rem;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: #667eea;">95%</div>
+                                <div style="font-size: 0.9rem; color: #718096;">Program Efficiency</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 2rem; font-weight: 700; color: #764ba2;">4.9/5</div>
+                                <div style="font-size: 0.9rem; color: #718096;">Charity Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card" style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); position: relative; overflow: hidden;">
+                        <div class="feature-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem;">
+                            <i class="fas fa-hands-helping text-white text-2xl"></i>
+                        </div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #2d3748;">Comprehensive Approach</h3>
+                        <p style="color: #4b5563; line-height: 1.7; margin-bottom: 1rem;">
+                            Our group applies a range of effective approaches proven to be impactful at addressing the issue at hand. This includes an intentional mix of charities that implement evidence-based strategies, ranging from direct services to regional coalitions to national policy reform.
+                        </p>
+                        <div class="approach-tags" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem;">
+                            <span style="background: #f0f9ff; color: #0369a1; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Direct Services</span>
+                            <span style="background: #f0fdf4; color: #166534; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Regional Coalitions</span>
+                            <span style="background: #fef3c7; color: #92400e; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.85rem; font-weight: 600;">Policy Reform</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://i.pinimg.com/564x/f6/9d/94/f69d947f717ce1d6b35da89e4a8af634.jpg" 
-                         alt="Our Impact" 
-                         class="rounded-lg shadow-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Impact Reporting Section -->
-    <section class="section">
-        <div class="container">
-            <div class="card">
-                <h2 class="text-3xl font-bold mb-6 text-center">Impact Reporting</h2>
-                <p class="text-lg text-gray-600 text-center mb-6">
-                    Rest easy knowing your contributions support highly rated charities with proven outcomes, allowing you to see the meaningful difference you are making. Coming soon, as an investor in a Causeway fund, you'll receive quarterly reports on the fund's performance and its impact on your chosen cause.
-                </p>
-                <div class="text-center">
-                    <span class="inline-block bg-accent text-white px-4 py-2 rounded-full font-semibold">
-                        Expected delivery in early 2026
-                    </span>
+                
+                <div class="impact-visual">
+                    <div class="image-container" style="position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.15); background: white; padding: 1rem;">
+                        <img src="https://i.pinimg.com/564x/f6/9d/94/f69d947f717ce1d6b35da89e4a8af634.jpg" 
+                             alt="Our Impact" 
+                             style="width: 100%; height: 400px; object-fit: cover; border-radius: 15px;">
+                        <div class="image-overlay" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.7), transparent); padding: 2rem; border-radius: 0 0 15px 15px;">
+                            <div style="color: white;">
+                                <div style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">Quarterly Impact Reports</div>
+                                <div style="font-size: 0.9rem; opacity: 0.9;">Our analysts manage and assess these funds on a quarterly basis to ensure that the most highly rated and efficient charities receive your support.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="trust-indicators" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2rem;">
+                        <div class="trust-item" style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                            <i class="fas fa-shield-alt" style="font-size: 2rem; color: #10b981; margin-bottom: 0.5rem;"></i>
+                            <div style="font-size: 0.9rem; font-weight: 600; color: #2d3748;">Verified Charities</div>
+                        </div>
+                        <div class="trust-item" style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                            <i class="fas fa-trophy" style="font-size: 2rem; color: #f59e0b; margin-bottom: 0.5rem;"></i>
+                            <div style="font-size: 0.9rem; font-weight: 600; color: #2d3748;">Top Rated</div>
+                        </div>
+                        <div class="trust-item" style="background: white; padding: 1.5rem; border-radius: 15px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.08);">
+                            <i class="fas fa-chart-pie" style="font-size: 2rem; color: #667eea; margin-bottom: 0.5rem;"></i>
+                            <div style="font-size: 0.9rem; font-weight: 600; color: #2d3748;">Transparent</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,15 +445,14 @@
                 <!-- Contact Info -->
                 <div class="contact-info text-center">
                     <p><strong>Main Office:</strong> Kampala, Uganda</p>
-                    <p><strong>NGO Reg:</strong> NGO/UG/0012345  
-                    <p>Email: <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
-                    <p class="mt-4">© 2024 Oseko Foundation. All rights reserved.</p>
+                    <p><strong>NGO Reg:</strong> NGO/UG/0012345</p>
+                    <p><strong>Phone:</strong> +256 772 123456</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
                 </div>
 
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="Privacy Policy.html">Privacy Policy</a>
                     <a href="Terms of Service.html">Terms of Service</a>
@@ -405,6 +545,92 @@
             }
         }).render('#paypal-button-container');
     </script>
+    
+    <!-- Enhanced CSS Animations -->
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+        
+        @keyframes fadeInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(30px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes slideInUp {
+            from { 
+                opacity: 0; 
+                transform: translateY(50px); 
+            }
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        
+        @keyframes countUp {
+            from { 
+                opacity: 0; 
+                transform: scale(0.5); 
+            }
+            to { 
+                opacity: 1; 
+                transform: scale(1); 
+            }
+        }
+        
+        /* Enhanced Button Hover Effects */
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* PayPal Button Hover Effects */
+        .paypal-button:hover {
+            transform: none;
+            box-shadow: none;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Enhanced Input Focus */
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        /* Hero Background Animation */
+        .hero-bg-animation {
+            pointer-events: none;
+        }
+        
+        .floating-heart {
+            pointer-events: none;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    </style>
     
     <!-- Additional Styles for Donate Page -->
     <style>

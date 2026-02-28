@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frequently Asked Questions - Oseko Foundation</title>
+    <meta name="description" content="Find answers to common questions about Oseko Foundation's work, donations, volunteering, and impact across East Africa.">
+    <meta name="keywords" content="FAQ, Oseko Foundation, questions, donations, volunteer, Africa charity">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>">
+</head>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
+                <span>Oseko Foundation</span>
+            </a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="team.html" class="nav-link">Team</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- FAQ Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); position: relative; overflow: hidden;">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-animation">
+            <div class="floating-question" style="left: 10%; animation-delay: 0s;">❓</div>
+            <div class="floating-question" style="left: 25%; animation-delay: 2s;">🤔</div>
+            <div class="floating-question" style="left: 40%; animation-delay: 4s;">💡</div>
+            <div class="floating-question" style="left: 55%; animation-delay: 1s;">❓</div>
+            <div class="floating-question" style="left: 70%; animation-delay: 3s;">🤔</div>
+            <div class="floating-question" style="left: 85%; animation-delay: 5s;">💡</div>
+        </div>
+        
+        <div class="container text-center" style="position: relative; z-index: 10;">
+            <div class="hero-content-animate">
+                <h1 class="hero-title" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); animation: fadeInUp 1s ease-out;">
+                    Frequently Asked Questions
+                </h1>
+                <p class="hero-subtitle" style="font-size: 1.3rem; line-height: 1.8; max-width: 600px; margin: 0 auto 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); animation: fadeInUp 1s ease-out 0.2s both;">
+                    Find answers to common questions about our work, donations, and how you can make a difference across East Africa.
+                </p>
+                <div class="hero-buttons" style="animation: fadeInUp 1s ease-out 0.4s both;">
+                    <a href="#donations" class="btn btn-accent btn-large" style="background: white; color: #667eea; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; margin: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                        <i class="fas fa-hand-holding-heart mr-2"></i>Donation Questions
+                    </a>
+                    <a href="#volunteering" class="btn btn-secondary btn-large" style="background: transparent; color: white; border: 2px solid white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; margin: 0.5rem; transition: all 0.3s ease;">
+                        <i class="fas fa-users mr-2"></i>Get Involved
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section class="section">
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="faq-search" style="text-align: center; margin-bottom: 3rem;">
+                <div style="max-width: 600px; margin: 0 auto; position: relative;">
+                    <input type="text" id="faqSearch" placeholder="Search for answers..." style="width: 100%; padding: 1rem 3rem 1rem 1rem; border: 2px solid #e2e8f0; border-radius: 50px; font-size: 1.1rem; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <i class="fas fa-search" style="position: absolute; left: 1.5rem; top: 50%; transform: translateY(-50%); color: #718096;"></i>
+                </div>
+            </div>
+
+            <!-- FAQ Categories -->
+            <div class="faq-categories" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
+                <button class="category-btn active" data-category="all" style="background: #667eea; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-globe mr-2"></i>All Questions
+                </button>
+                <button class="category-btn" data-category="donations" style="background: white; color: #667eea; border: 2px solid #667eea; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-hand-holding-heart mr-2"></i>Donations
+                </button>
+                <button class="category-btn" data-category="volunteering" style="background: white; color: #667eea; border: 2px solid #667eea; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-users mr-2"></i>Volunteering
+                </button>
+                <button class="category-btn" data-category="operations" style="background: white; color: #667eea; border: 2px solid #667eea; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-cogs mr-2"></i>Operations
+                </button>
+                <button class="category-btn" data-category="impact" style="background: white; color: #667eea; border: 2px solid #667eea; padding: 0.75rem 1.5rem; border-radius: 25px; font-weight: 600; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-chart-line mr-2"></i>Impact
+                </button>
+            </div>
+
+            <!-- FAQ Items -->
+            <div class="faq-content" style="max-width: 800px; margin: 0 auto;">
+                
+                <!-- Donations Section -->
+                <div id="donations" class="faq-section">
+                    <h2 class="section-title" style="font-size: 2rem; font-weight: 700; color: #2d3748; margin-bottom: 2rem; text-align: center;">
+                        <i class="fas fa-hand-holding-heart mr-2" style="color: #667eea;"></i>Donation Questions
+                    </h2>
+                    
+                    <div class="faq-item" style="background: white; border-radius: 15px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #667eea;">
+                        <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 1rem 0;" onclick="toggleFAQ(this)">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748; margin: 0;">
+                                How is my donation used?
+                            </h3>
+                            <i class="fas fa-chevron-down" style="color: #667eea; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="display: none; padding: 1rem 0; color: #718096; line-height: 1.6;">
+                            <p>Your donation is immediately put to work in communities across East Africa. We use a transparent 4-step process: <strong>1) Your donation</strong> → <strong>2) Local procurement</strong> → <strong>3) Distribution</strong> → <strong>4) Impact reporting</strong>. 95% of all donations go directly to programs, with only 5% for administrative costs.</p>
+                            <div style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                                <strong>Example Impact:</strong> $50 provides clean water for 2 families for one month, or school meals for 25 children.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="background: white; border-radius: 15px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #667eea;">
+                        <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 1rem 0;" onclick="toggleFAQ(this)">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748; margin: 0;">
+                                Are donations tax-deductible?
+                            </h3>
+                            <i class="fas fa-chevron-down" style="color: #667eea; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="display: none; padding: 1rem 0; color: #718096; line-height: 1.6;">
+                            <p>Yes! Oseko Foundation is a registered NGO (NGO/UG/0012345) and donations are tax-deductible in many countries. After making a donation, you'll receive an automatic tax receipt via email. For annual tax purposes, we can provide consolidated donation reports upon request.</p>
+                            <div style="background: #fef3c7; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+                                <i class="fas fa-info-circle mr-2" style="color: #f59e0b;"></i>
+                                <strong>Please consult with your tax advisor</strong> for specific deductibility in your country.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="background: white; border-radius: 15px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #667eea;">
+                        <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 1rem 0;" onclick="toggleFAQ(this)">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748; margin: 0;">
+                                What payment methods do you accept?
+                            </h3>
+                            <i class="fas fa-chevron-down" style="color: #667eea; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="display: none; padding: 1rem 0; color: #718096; line-height: 1.6;">
+                            <p>We accept multiple secure payment methods for your convenience:</p>
+                            <ul style="list-style: none; padding: 1rem 0;">
+                                <li style="padding: 0.5rem 0;"><i class="fas fa-credit-card mr-2" style="color: #667eea;"></i><strong>Credit/Debit Cards:</strong> Visa, Mastercard, American Express</li>
+                                <li style="padding: 0.5rem 0;"><i class="fab fa-paypal mr-2" style="color: #667eea;"></i><strong>PayPal:</strong> Safe and secure online payments</li>
+                                <li style="padding: 0.5rem 0;"><i class="fab fa-bitcoin mr-2" style="color: #f59e0b;"></i><strong>Bitcoin:</strong> Cryptocurrency donations</li>
+                                <li style="padding: 0.5rem 0;"><i class="fas fa-university mr-2" style="color: #667eea;"></i><strong>Bank Transfer:</strong> Direct bank deposits for large donations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="background: white; border-radius: 15px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #667eea;">
+                        <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 1rem 0;" onclick="toggleFAQ(this)">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748; margin: 0;">
+                                Can I set up recurring monthly donations?
+                            </h3>
+                            <i class="fas fa-chevron-down" style="color: #667eea; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="display: none; padding: 1rem 0; color: #718096; line-height: 1.6;">
+                            <p>Absolutely! Monthly giving is our most impactful way to donate. Monthly donations provide:</p>
+                            <ul style="list-style: none; padding: 1rem 0;">
+                                <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle mr-2" style="color: #10b981;"></i><strong>Consistent Support:</strong> Reliable funding for ongoing programs</li>
+                                <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle mr-2" style="color: #10b981;"></i><strong>Cost Effective:</strong> Lower administrative costs, more impact</li>
+                                <li style="padding: 0.5rem 0;"><i class="fas fa-check-circle mr-2" style="color: #10b981;"></i><strong>Easy Management:</strong> Modify or cancel anytime</li>
+                            </ul>
+                            <div style="background: #dcfce7; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;">
+                                <a href="donate.html" class="btn btn-primary" style="background: #10b981; color: white; padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block;">
+                                    <i class="fas fa-calendar-alt mr-2"></i>Set Up Monthly Donation
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volunteering Section -->
+                <div id="volunteering" class="faq-section" style="display: none;">
+                    <h2 class="section-title" style="font-size: 2rem; font-weight: 700; color: #2d3748; margin-bottom: 2rem; text-align: center;">
+                        <i class="fas fa-users mr-2" style="color: #667eea;"></i>Volunteering Questions
+                    </h2>
+                    
+                    <div class="faq-item" style="background: white; border-radius: 15px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #f093fb;">
+                        <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 1rem 0;" onclick="toggleFAQ(this)">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748; margin: 0;">
+                                How can I volunteer with Oseko Foundation?
+                            </h3>
+                            <i class="fas fa-chevron-down" style="color: #f093fb; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="display: none; padding: 1rem 0; color: #718096; line-height: 1.6;">
+                            <p>We welcome volunteers from around the world! Here's how you can get involved:</p>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                                <div style="background: #fef3c7; padding: 1rem; border-radius: 8px;">
+                                    <i class="fas fa-laptop mr-2" style="color: #f093fb;"></i>
+                                    <strong>Remote Volunteering</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Graphic design, social media, fundraising, research</p>
+                                </div>
+                                <div style="background: #f0f9ff; padding: 1rem; border-radius: 8px;">
+                                    <i class="fas fa-plane mr-2" style="color: #f093fb;"></i>
+                                    <strong>On-site Volunteering</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Program implementation, training, community outreach</p>
+                                </div>
+                                <div style="background: #dcfce7; padding: 1rem; border-radius: 8px;">
+                                    <i class="fas fa-hands-helping mr-2" style="color: #f093fb;"></i>
+                                    <strong>Skill-based Volunteering</strong>
+                                    <p style="font-size: 0.9rem; margin-top: 0.5rem;">Medical professionals, educators, engineers, agricultural experts</p>
+                                </div>
+                            </div>
+                            <div style="text-align: center; margin-top: 1.5rem;">
+                                <a href="contact.html" class="btn btn-primary" style="background: #f093fb; color: white; padding: 0.75rem 2rem; border-radius: 25px; text-decoration: none; font-weight: 600; display: inline-block;">
+                                    <i class="fas fa-user-plus mr-2"></i>Apply to Volunteer
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" style="background: white; border-radius: 15px; padding: 1.5rem; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #f093fb;">
+                        <div class="faq-question" style="display: flex; justify-content: space-between; align-items: center; cursor: pointer; padding: 1rem 0;" onclick="toggleFAQ(this)">
+                            <h3 style="font-size: 1.2rem; font-weight: 600; color: #2d3748; margin: 0;">
+                                What skills are most needed?
+                            </h3>
+                            <i class="fas fa-chevron-down" style="color: #f093fb; transition: transform 0.3s ease;"></i>
+                        </div>
+                        <div class="faq-answer" style="display: none; padding: 1rem 0; color: #718096; line-height: 1.6;">
+                            <p>We currently have high demand for these skills:</p>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin: 1rem 0;">
+                                <div>
+                                    <h4 style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-heartbeat mr-2"></i>Healthcare</h4>
+                                    <p>Doctors, nurses, public health specialists, mental health professionals</p>
+                                </div>
+                                <div>
+                                    <h4 style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-graduation-cap mr-2"></i>Education</h4>
+                                    <p>Teachers, curriculum developers, education technology specialists</p>
+                                </div>
+                                <div>
+                                    <h4 style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-tint mr-2"></i>Water & Sanitation</h4>
+                                    <p>Engineers, hydrologists, WASH specialists</p>
+                                </div>
+                                <div>
+                                    <h4 style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;"><i class="fas fa-seedling mr-2"></i>Agriculture</h4>
+                                    <p>Agricultural experts, sustainability specialists, food security advisors</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Still Have Questions -->
+                <div class="still-questions" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 20px; padding: 3rem; margin-top: 3rem; text-align: center; color: white;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Still Have Questions?</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; opacity: 0.9;">We're here to help! Contact our team for any additional questions or support needs.</p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                        <a href="mailto:info@osekofoundation.org" class="contact-method" style="background: rgba(255,255,255,0.2); border-radius: 10px; padding: 1.5rem; text-decoration: none; color: white; transition: all 0.3s ease; display: block;">
+                            <i class="fas fa-envelope text-2xl mb-1"></i>
+                            <div style="font-weight: 600;">Email Us</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">info@osekofoundation.org</div>
+                        </a>
+                        <a href="contact.html" class="contact-method" style="background: rgba(255,255,255,0.2); border-radius: 10px; padding: 1.5rem; text-decoration: none; color: white; transition: all 0.3s ease; display: block;">
+                            <i class="fas fa-phone text-2xl mb-1"></i>
+                            <div style="font-weight: 600;">Call Us</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">+256 772 123456</div>
+                        </a>
+                        <a href="contact.html" class="contact-method" style="background: rgba(255,255,255,0.2); border-radius: 10px; padding: 1.5rem; text-decoration: none; color: white; transition: all 0.3s ease; display: block;">
+                            <i class="fas fa-comments text-2xl mb-1"></i>
+                            <div style="font-weight: 600;">Live Chat</div>
+                            <div style="font-size: 0.9rem; opacity: 0.8;">Available Mon-Fri</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oseko Foundation</h3>
+                    <p>Transforming lives across Africa through sustainable development and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/AidForHope" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://facebook.com/OsekoFoundation" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com/OsekoFoundation" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/company/oseko-foundation" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="partner.html">Partner</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="Privacy Policy.html">Privacy Policy</a></li>
+                        <li><a href="Terms of Service.html">Terms of Service</a></li>
+                        <li><a href="Donation Policy.html">Donation Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
+                <p><strong>NGO Reg:</strong> NGO/UG/0012345</p>
+                <p><strong>Email:</strong> <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
+                <p><strong>Phone:</strong> +256 772 123456</p>
+                <p><strong>Main Office:</strong> Kampala, Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Functionality
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.style.display === 'none' || answer.style.display === '') {
+                answer.style.display = 'block';
+                icon.style.transform = 'rotate(180deg)';
+                
+                // Animate answer appearance
+                answer.style.opacity = '0';
+                answer.style.transform = 'translateY(-10px)';
+                
+                setTimeout(() => {
+                    answer.style.transition = 'all 0.3s ease';
+                    answer.style.opacity = '1';
+                    answer.style.transform = 'translateY(0)';
+                }, 10);
+            } else {
+                answer.style.display = 'none';
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Category Filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryBtns = document.querySelectorAll('.category-btn');
+            const sections = document.querySelectorAll('.faq-section');
+            const searchInput = document.getElementById('faqSearch');
+            
+            categoryBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update button styles
+                    categoryBtns.forEach(b => {
+                        b.style.background = 'white';
+                        b.style.color = '#667eea';
+                        b.style.border = '2px solid #667eea';
+                    });
+                    
+                    this.style.background = '#667eea';
+                    this.style.color = 'white';
+                    this.style.border = 'none';
+                    
+                    // Show/hide sections
+                    sections.forEach(section => {
+                        if (category === 'all') {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = section.id === category ? 'block' : 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Search functionality
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    
+                    faqItems.forEach(item => {
+                        const question = item.querySelector('h3').textContent.toLowerCase();
+                        const answer = item.querySelector('.faq-answer').textContent.toLowerCase();
+                        
+                        if (searchTerm === '' || question.includes(searchTerm) || answer.includes(searchTerm)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

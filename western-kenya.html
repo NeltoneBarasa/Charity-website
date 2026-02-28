@@ -40,6 +40,7 @@
             <ul class="nav-menu">
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
             </ul>
@@ -57,9 +58,7 @@
                 <a href="donate.html" class="cta-button">
                     <i class="fas fa-heart"></i> Support Western Kenya
                 </a>
-                <a href="about.html" class="btn btn-secondary">
-                    <i class="fas fa-info-circle"></i> Learn More
-                </a>
+                
         </div>
         </div>
     </section>
@@ -70,43 +69,919 @@
             <div class="section-title">
                 <h2>Our Programs in Western Kenya</h2>
                 <p class="section-subtitle">Comprehensive community development initiatives across Western Kenya</p>
-                    </div>
+            </div>
                     
             <div class="grid grid-3">
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-seedling text-primary text-2xl"></i>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/download (2).jfif" alt="Agricultural Development in Western Kenya" class="program-photo">
                     </div>
-                    <h3>Agricultural Development</h3>
-                    <p>Supporting farmers with modern farming techniques, seeds, and tools to improve crop yields and food security in Western Kenya.</p>
+                    <div class="program-content">
+                        <div class="program-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Agricultural Development</h3>
+                        <p>Supporting farmers with modern farming techniques, seeds, and tools to improve crop yields and food security in Western Kenya.</p>
+                        <div class="program-stats">
+                            <div class="stat">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Farmers Supported</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/24.jfif" alt="Education Programs in Western Kenya" class="program-photo">
+                    </div>
+                    <div class="program-content">
+                        <div class="program-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Education Programs</h3>
+                        <p>Building schools, providing educational resources, and training teachers to improve learning outcomes for children in rural areas.</p>
+                        <div class="program-stats">
+                            <div class="stat">
+                                <div class="stat-number">6</div>
+                                <div class="stat-label">Schools Built</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                    <h3>Education Programs</h3>
-                    <p>Building schools, providing educational resources, and training teachers to improve learning outcomes for children in rural areas.</p>
+                
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="images/download (3).jfif" alt="Community Empowerment in Western Kenya" class="program-photo">
+                    </div>
+                    <div class="program-content">
+                        <div class="program-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Community Empowerment</h3>
+                        <p>Strengthening communities through capacity building, women's empowerment programs, and economic development initiatives.</p>
+                        <div class="program-stats">
+                            <div class="stat">
+                                <div class="stat-number">30+</div>
+                                <div class="stat-label">Communities Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-users text-primary text-2xl"></i>
-                    </div>
-                    <h3>Community Empowerment</h3>
-                    <p>Strengthening communities through capacity building, women's empowerment programs, and economic development initiatives.</p>
-                    </div>
-                </div>
-            </div>
+        </div>
     </section>
 
-    <!-- Impact Section -->
-    <section class="section bg-gray-100">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Impact in Western Kenya</h2>
-                <p class="section-subtitle">Real change measured in lives improved and communities strengthened</p>
-                    </div>
+    <style>
+        .program-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .program-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .program-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .program-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .program-card:hover .program-photo {
+            transform: scale(1.05);
+        }
+
+        .program-content {
+            padding: 2rem;
+            position: relative;
+        }
+
+        .program-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #4ECDC4 0%, #45B7D1 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(78, 205, 196, 0.3);
+        }
+
+        .program-content h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #2d3748;
+            text-align: center;
+        }
+
+        .program-content p {
+            color: #718096;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .program-stats {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4ECDC4;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #718096;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .grid-3 {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
             
-            <div class="grid grid-3">
+            .program-image {
+                height: 150px;
+            }
+            
+            .program-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+
+    <!-- Detailed Programs Section -->
+<section class="section bg-gray-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>🌍 Our Programs in Western Kenya</h2>
+            <p class="section-subtitle">Comprehensive community development initiatives across Western Kenya</p>
+        </div>
+        
+        <div class="programs-intro">
+            <p class="text-lg">
+                Oseko Foundation implements integrated programs across Western Kenya aimed at strengthening livelihoods, improving access to education, and empowering communities to build sustainable futures.
+            </p>
+        </div>
+
+        <!-- Agricultural Development -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large agri-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div>
+                    <h3>🌱 Agricultural Development in Western Kenya</h3>
+                    <p>We support smallholder farmers with modern, climate-smart farming techniques, quality seeds, and basic farming tools to improve crop yields, resilience, and food security.</p>
+                </div>
+            </div>
+            
+            <div class="program-details">
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h4>Focus Counties:</h4>
+                        <ul>
+                            <li>Kakamega</li>
+                            <li>Bungoma</li>
+                            <li>Busia</li>
+                            <li>Vihiga</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4>Key Interventions:</h4>
+                        <ul>
+                            <li>Farmer training on modern and sustainable practices</li>
+                            <li>Distribution of improved seeds and farming inputs</li>
+                            <li>Support for small-scale food production and household nutrition</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="impact-stats">
+                    <div class="impact-stat">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Farmers Supported</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Programs -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large edu-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h3>📚 Education Programs in Western Kenya</h3>
+                    <p>Oseko Foundation works to improve learning environments and educational outcomes for children in rural communities across Western Kenya.</p>
+                </div>
+            </div>
+            
+            <div class="program-details">
+                <div class="support-includes">
+                    <h4>Our Support Includes:</h4>
+                    <ul>
+                        <li>Construction and renovation of classrooms</li>
+                        <li>Provision of learning materials and school supplies</li>
+                        <li>Teacher training and community education support</li>
+                    </ul>
+                </div>
+                
+                <div class="impact-stats">
+                    <div class="impact-stat">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Schools Built or Supported</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Community Empowerment -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large community-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div>
+                    <h3>🤝 Community Empowerment in Western Kenya</h3>
+                    <p>We strengthen communities by investing in people—especially women and youth—through capacity building and economic empowerment initiatives.</p>
+                </div>
+            </div>
+            
+            <div class="program-details">
+                <div class="focus-areas">
+                    <h4>Programs Focus On:</h4>
+                    <ul>
+                        <li>Women's empowerment and income-generating activities</li>
+                        <li>Community leadership and skills training</li>
+                        <li>Support for small community development projects</li>
+                    </ul>
+                </div>
+                
+                <div class="impact-stats">
+                    <div class="impact-stat">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Communities Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Impact Section -->
+        <div class="impact-section">
+            <div class="section-title">
+                <h2>📊 Our Impact in Western Kenya</h2>
+                <p class="section-subtitle">Real change measured in lives improved and communities strengthened</p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="impact-number">500+</div>
+                    <div class="impact-label">farmers trained in modern agricultural techniques</div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="impact-number">20+</div>
+                    <div class="impact-label">schools built or renovated through direct and partner support</div>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <div class="impact-number">1,000+</div>
+                    <div class="impact-label">women empowered through skills training and economic programs</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="cta-section">
+            <div class="cta-content">
+                <h3>❤️ Support Our Work in Western Kenya</h3>
+                <p>Help us continue empowering communities in Western Kenya through agricultural development, education, and sustainable community initiatives that create lasting impact.</p>
+                <a href="donate.html" class="cta-button">
+                    <i class="fas fa-heart"></i> Donate Now
+                </a>
+            </div>
+        </div>
+
+        <!-- Kenya National Programs -->
+        <div class="national-section">
+            <div class="section-title">
+                <h2>🇰🇪 Our Programs in Kenya</h2>
+                <p class="section-subtitle">Driving sustainable community development across Kenya</p>
+            </div>
+            
+            <div class="national-intro">
+                <p class="text-lg">
+                    Oseko Foundation works across Kenya to improve livelihoods, expand access to education, and strengthen community resilience through locally driven, sustainable programs.
+                </p>
+            </div>
+
+            <div class="national-grid">
+                <div class="national-card">
+                    <div class="national-icon">
+                        <i class="fas fa-wheat"></i>
+                    </div>
+                    <h3>🌾 Agricultural Development Programs</h3>
+                    <p>We support smallholder farmers in rural and semi-arid regions to improve food security and household income.</p>
+                    
+                    <div class="program-areas">
+                        <h4>Program Areas Include:</h4>
+                        <ul>
+                            <li>Western Kenya</li>
+                            <li>Parts of Rift Valley and Eastern Kenya</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="key-activities">
+                        <h4>Key Activities:</h4>
+                        <ul>
+                            <li>Farmer training on climate-smart agriculture</li>
+                            <li>Access to quality seeds and farming tools</li>
+                            <li>Support for sustainable food production systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="national-card">
+                    <div class="national-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>🏫 Education Programs</h3>
+                    <p>Education is central to our mission. We work with communities to improve school infrastructure and learning outcomes for children.</p>
+                    
+                    <div class="education-work">
+                        <h4>Our Education Work Includes:</h4>
+                        <ul>
+                            <li>School construction and renovation</li>
+                            <li>Learning materials and student support</li>
+                            <li>Teacher training and community education initiatives</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="national-card">
+                    <div class="national-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>🌍 Community Empowerment & Livelihoods</h3>
+                    <p>We empower communities to take charge of their development through skills training and economic empowerment programs.</p>
+                    
+                    <div class="focus-areas">
+                        <h4>Focus Areas:</h4>
+                        <ul>
+                            <li>Women and youth empowerment</li>
+                            <li>Community capacity building</li>
+                            <li>Support for income-generating activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- National Impact -->
+            <div class="national-impact">
+                <h3>📈 National Impact Highlights</h3>
+                <div class="national-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">farmers supported across Kenya</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">schools built or renovated</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1,000+</div>
+                        <div class="stat-label">women empowered through livelihood programs</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">communities reached nationwide</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final CTA -->
+            <div class="final-cta">
+                <h3>🤲 Support Our Work in Kenya</h3>
+                <p>Join us in building stronger, healthier, and more resilient communities across Kenya through sustainable development initiatives.</p>
+                <a href="donate.html" class="cta-button">
+                    <i class="fas fa-heart"></i> Support Kenya Programs
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.programs-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.program-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-section:hover {
+    transform: translateY(-5px);
+}
+
+.program-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.program-icon-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.agri-icon {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.edu-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.community-icon {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.program-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.program-header p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detail-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #43e97b;
+}
+
+.detail-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.detail-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-card li {
+    padding: 0.5rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.detail-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #43e97b;
+    font-weight: bold;
+}
+
+.support-includes, .focus-areas {
+    margin-bottom: 2rem;
+}
+
+.support-includes h4, .focus-areas h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.support-includes ul, .focus-areas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.support-includes li, .focus-areas li {
+    padding: 0.75rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.support-includes li::before {
+    content: "📚";
+    position: absolute;
+    left: 0;
+}
+
+.focus-areas li::before {
+    content: "🤝";
+    position: absolute;
+    left: 0;
+}
+
+.impact-stats {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.impact-stat {
+    text-align: center;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem 3rem;
+    border-radius: 16px;
+    border: 2px solid #43e97b;
+}
+
+.impact-stat .stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #43e97b;
+    margin-bottom: 0.5rem;
+}
+
+.impact-stat .stat-label {
+    font-size: 1rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+.impact-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.impact-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    border-color: #43e97b;
+}
+
+.impact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.impact-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #43e97b;
+    margin-bottom: 1rem;
+}
+
+.impact-label {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.cta-content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    background: white;
+    color: #43e97b;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+.national-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.national-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 16px;
+}
+
+.national-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.national-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.national-card:hover {
+    transform: translateY(-5px);
+    border-color: #667eea;
+}
+
+.national-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.national-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.national-card p {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.program-areas, .key-activities, .education-work {
+    margin-bottom: 1.5rem;
+}
+
+.program-areas h4, .key-activities h4, .education-work h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.75rem;
+}
+
+.program-areas ul, .key-activities ul, .education-work ul {
+    list-style: none;
+    padding: 0;
+}
+
+.program-areas li, .key-activities li, .education-work li {
+    padding: 0.5rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.program-areas li::before {
+    content: "📍";
+    position: absolute;
+    left: 0;
+}
+
+.key-activities li::before {
+    content: "🌾";
+    position: absolute;
+    left: 0;
+}
+
+.education-work li::before {
+    content: "📖";
+    position: absolute;
+    left: 0;
+}
+
+.national-impact {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 3rem;
+    border-radius: 16px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.national-impact h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 2rem;
+}
+
+.national-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item .stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item .stat-label {
+    color: #718096;
+    font-weight: 500;
+}
+
+.final-cta {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 3rem;
+    border-radius: 16px;
+    color: white;
+}
+
+.final-cta h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.final-cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.final-cta .cta-button {
+    background: white;
+    color: #667eea;
+}
+
+.final-cta .cta-button:hover {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+    .program-section {
+        padding: 2rem;
+    }
+    
+    .program-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .national-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .national-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+</style>
                 <div class="card text-center">
                     <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-tractor text-primary text-2xl"></i>

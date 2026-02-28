@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter - Oseko Foundation</title>
+    <meta name="description" content="Subscribe to Oseko Foundation's newsletter for updates on our impact across Kenya, Uganda, and Tanzania.">
+    <meta name="keywords" content="Oseko Foundation newsletter, subscribe, updates, Africa charity news">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📧</text></svg>">
+</head>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
+                <span>Oseko Foundation</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); position: relative; overflow: hidden;">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-animation">
+            <div class="floating-heart" style="left: 10%; animation-delay: 0s;">📧</div>
+            <div class="floating-heart" style="left: 20%; animation-delay: 2s;">💬</div>
+            <div class="floating-heart" style="left: 30%; animation-delay: 4s;">📰</div>
+            <div class="floating-heart" style="left: 40%; animation-delay: 1s;">📧</div>
+            <div class="floating-heart" style="left: 50%; animation-delay: 3s;">💬</div>
+            <div class="floating-heart" style="left: 60%; animation-delay: 5s;">📰</div>
+            <div class="floating-heart" style="left: 70%; animation-delay: 2s;">📧</div>
+            <div class="floating-heart" style="left: 80%; animation-delay: 4s;">💬</div>
+            <div class="floating-heart" style="left: 90%; animation-delay: 1s;">📰</div>
+        </div>
+        
+        <div class="container text-center" style="position: relative; z-index: 10;">
+            <div class="hero-content-animate">
+                <h1 class="hero-title" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); animation: fadeInUp 1s ease-out;">
+                    Stay Connected
+                </h1>
+                <p class="hero-subtitle" style="font-size: 1.3rem; line-height: 1.8; max-width: 600px; margin: 0 auto 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); animation: fadeInUp 1s ease-out 0.2s both;">
+                    Get inspiring stories, impact updates, and opportunities to make a difference across Kenya, Uganda, and Tanzania.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem;">Join Our Community</h2>
+                <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Be the first to know about our impact and how you can help transform lives</p>
+            </div>
+            
+            <div class="newsletter-form-container" style="max-width: 600px; margin: 0 auto;">
+                <form class="newsletter-form" style="background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #2d3748;">Full Name</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1rem; transition: all 0.3s ease;">
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #2d3748;">Email Address</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 1rem; border: 2px solid #e2e8f0; border-radius: 10px; font-size: 1rem; transition: all 0.3s ease;">
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #2d3748;">Interests (Select all that apply)</label>
+                        <div class="interests-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                            <label class="interest-checkbox" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="education" style="width: 1.2rem; height: 1.2rem;">
+                                <span>Education Programs</span>
+                            </label>
+                            <label class="interest-checkbox" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="healthcare" style="width: 1.2rem; height: 1.2rem;">
+                                <span>Healthcare Initiatives</span>
+                            </label>
+                            <label class="interest-checkbox" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="water" style="width: 1.2rem; height: 1.2rem;">
+                                <span>Clean Water Projects</span>
+                            </label>
+                            <label class="interest-checkbox" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="emergency" style="width: 1.2rem; height: 1.2rem;">
+                                <span>Emergency Response</span>
+                            </label>
+                            <label class="interest-checkbox" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="volunteer" style="width: 1.2rem; height: 1.2rem;">
+                                <span>Volunteer Opportunities</span>
+                            </label>
+                            <label class="interest-checkbox" style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="interests" value="events" style="width: 1.2rem; height: 1.2rem;">
+                                <span>Events & Fundraisers</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group" style="margin-bottom: 2rem;">
+                        <label class="consent-checkbox" style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                            <input type="checkbox" name="consent" required style="width: 1.2rem; height: 1.2rem; margin-top: 0.2rem;">
+                            <span style="font-size: 0.9rem; color: #718096;">I agree to receive email updates from Oseko Foundation and understand I can unsubscribe at any time.</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-accent btn-large" style="width: 100%; padding: 1.2rem; font-size: 1.1rem; font-weight: 600; border-radius: 10px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; cursor: pointer; transition: all 0.3s ease;">
+                        <i class="fas fa-envelope mr-2"></i>Subscribe to Newsletter
+                    </button>
+                </form>
+                
+                <div class="newsletter-benefits" style="margin-top: 3rem;">
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3748; margin-bottom: 1.5rem; text-align: center;">What You'll Receive</h3>
+                    <div class="benefits-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                        <div class="benefit-card" style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                            <div class="benefit-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <i class="fas fa-newspaper text-2xl text-white"></i>
+                            </div>
+                            <h4 style="font-size: 1.1rem; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">Monthly Impact Reports</h4>
+                            <p style="color: #718096; font-size: 0.9rem; line-height: 1.6;">Detailed updates on our programs and the lives we're transforming across East Africa.</p>
+                        </div>
+                        
+                        <div class="benefit-card" style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                            <div class="benefit-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <i class="fas fa-heart text-2xl text-white"></i>
+                            </div>
+                            <h4 style="font-size: 1.1rem; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">Inspiring Stories</h4>
+                            <p style="color: #718096; font-size: 0.9rem; line-height: 1.6;">Personal stories from beneficiaries, volunteers, and community members.</p>
+                        </div>
+                        
+                        <div class="benefit-card" style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); text-align: center;">
+                            <div class="benefit-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                                <i class="fas fa-hands-helping text-2xl text-white"></i>
+                            </div>
+                            <h4 style="font-size: 1.1rem; font-weight: 600; color: #2d3748; margin-bottom: 0.5rem;">Ways to Help</h4>
+                            <p style="color: #718096; font-size: 0.9rem; line-height: 1.6;">Exclusive opportunities to donate, volunteer, and make a difference.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (Hidden by default) -->
+    <div id="success-message" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 3rem; border-radius: 20px; box-shadow: 0 20px 50px rgba(0,0,0,0.2); text-align: center; z-index: 1000;">
+        <div class="success-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #10b981 0%, #059669 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+            <i class="fas fa-check text-3xl text-white"></i>
+        </div>
+        <h3 style="font-size: 1.8rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem;">Thank You for Subscribing!</h3>
+        <p style="color: #718096; line-height: 1.6; margin-bottom: 1.5rem;">You're now part of our community. Check your email for a confirmation message.</p>
+        <button onclick="closeSuccessMessage()" class="btn btn-accent" style="padding: 0.8rem 2rem; border-radius: 10px;">Got it!</button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oseko Foundation</h3>
+                    <p>Transforming lives across Africa through sustainable development and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" aria-label="YouTube" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="newsletter.html">Newsletter</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@osekofoundation.org</li>
+                        <li><i class="fas fa-phone"></i> +256 772 123456</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oseko Foundation. All rights reserved. | <a href="Privacy Policy.html">Privacy Policy</a> | <a href="Terms of Service.html">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Newsletter form submission
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const interests = formData.getAll('interests');
+            
+            // Simulate form submission (in real implementation, this would send to a backend)
+            console.log('Newsletter subscription:', { name, email, interests });
+            
+            // Show success message
+            document.getElementById('success-message').style.display = 'block';
+            
+            // Reset form
+            this.reset();
+        });
+        
+        function closeSuccessMessage() {
+            document.getElementById('success-message').style.display = 'none';
+        }
+        
+        // Add floating animation styles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0%, 100% { transform: translateY(0px) rotate(0deg); }
+                50% { transform: translateY(-20px) rotate(10deg); }
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .floating-heart {
+                position: absolute;
+                font-size: 2rem;
+                opacity: 0.3;
+                animation: float 6s ease-in-out infinite;
+            }
+            
+            .hero-content-animate > * {
+                animation: fadeInUp 1s ease-out forwards;
+            }
+            
+            .interest-checkbox:hover,
+            .consent-checkbox:hover {
+                color: #667eea;
+            }
+            
+            input[type="text"]:focus,
+            input[type="email"]:focus {
+                outline: none;
+                border-color: #667eea;
+                box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

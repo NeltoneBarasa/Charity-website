@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Oseko Foundation</title>
+    <meta name="description" content="Latest news, stories, and updates from Oseko Foundation's work across Africa.">
+    <meta name="keywords" content="Oseko Foundation blog, Africa charity news, impact stories, community development">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>">
+</head>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
+                <span>Oseko Foundation</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); position: relative; overflow: hidden;">
+        <!-- Animated Background Elements -->
+        <div class="hero-bg-animation">
+            <div class="floating-heart" style="left: 10%; animation-delay: 0s;">📝</div>
+            <div class="floating-heart" style="left: 20%; animation-delay: 2s;">💡</div>
+            <div class="floating-heart" style="left: 30%; animation-delay: 4s;">💚</div>
+            <div class="floating-heart" style="left: 40%; animation-delay: 1s;">📝</div>
+            <div class="floating-heart" style="left: 50%; animation-delay: 3s;">💡</div>
+            <div class="floating-heart" style="left: 60%; animation-delay: 5s;">💚</div>
+            <div class="floating-heart" style="left: 70%; animation-delay: 2s;">📝</div>
+            <div class="floating-heart" style="left: 80%; animation-delay: 4s;">💡</div>
+            <div class="floating-heart" style="left: 90%; animation-delay: 1s;">💚</div>
+        </div>
+        
+        <div class="container text-center" style="position: relative; z-index: 10;">
+            <div class="hero-content-animate">
+                <h1 class="hero-title" style="font-size: 3.5rem; font-weight: 800; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); animation: fadeInUp 1s ease-out;">
+                    Stories & Updates
+                </h1>
+                <p class="hero-subtitle" style="font-size: 1.3rem; line-height: 1.8; max-width: 600px; margin: 0 auto 2rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); animation: fadeInUp 1s ease-out 0.2s both;">
+                    Follow our journey as we transform communities across Africa through sustainable development, education, and healthcare initiatives.
+                </p>
+                <div class="hero-buttons" style="animation: fadeInUp 1s ease-out 0.4s both;">
+                    <a href="#latest-posts" class="btn btn-accent btn-large" style="background: white; color: #667eea; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; margin: 0.5rem; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+                        <i class="fas fa-newspaper mr-2"></i>Read Latest Stories
+                    </a>
+                    <a href="#categories" class="btn btn-secondary btn-large" style="background: transparent; color: white; border: 2px solid white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; margin: 0.5rem; transition: all 0.3s ease;">
+                        <i class="fas fa-tags mr-2"></i>Browse Categories
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section bg-gray-50" id="categories">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem;">Explore by Category</h2>
+                <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Find stories that matter most to you</p>
+            </div>
+            
+            <div class="categories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                <div class="category-card" style="background: white; border-radius: 15px; padding: 2rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent; animation: fadeInUp 0.8s ease-out;">
+                    <div class="category-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-tint text-2xl text-white"></i>
+                    </div>
+                    <h3 style="font-size: 1.3rem; font-weight: 600; color: #2d3748; margin-bottom: 1rem;">Clean Water</h3>
+                    <p style="color: #718096; font-size: 0.9rem;">Stories about water projects and clean water initiatives</p>
+                    <a href="#water" class="category-link" style="color: #667eea; font-weight: 500; text-decoration: none;" onclick="toggleCategory('water'); return false;">View Stories →</a>
+                </div>
+                
+                <div class="category-card" style="background: white; border-radius: 15px; padding: 2rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent; animation: fadeInUp 0.8s ease-out 0.1s both;">
+                    <div class="category-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-heartbeat text-2xl text-white"></i>
+                    </div>
+                    <h3 style="font-size: 1.3rem; font-weight: 600; color: #2d3748; margin-bottom: 1rem;">Healthcare</h3>
+                    <p style="color: #718096; font-size: 0.9rem;">Healthcare updates and medical camp stories</p>
+                    <a href="#healthcare" class="category-link" style="color: #f093fb; font-weight: 500; text-decoration: none;" onclick="toggleCategory('healthcare'); return false;">View Stories →</a>
+                </div>
+                
+                <div class="category-card" style="background: white; border-radius: 15px; padding: 2rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent; animation: fadeInUp 0.8s ease-out 0.2s both;">
+                    <div class="category-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                    </div>
+                    <h3 style="font-size: 1.3rem; font-weight: 600; color: #2d3748; margin-bottom: 1rem;">Education</h3>
+                    <p style="color: #718096; font-size: 0.9rem;">School updates and student success stories</p>
+                    <a href="#education" class="category-link" style="color: #43e97b; font-weight: 500; text-decoration: none;" onclick="toggleCategory('education'); return false;">View Stories →</a>
+                </div>
+                
+                <div class="category-card" style="background: white; border-radius: 15px; padding: 2rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; border: 2px solid transparent; animation: fadeInUp 0.8s ease-out 0.3s both;">
+                    <div class="category-icon" style="width: 60px; height: 60px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-users text-2xl text-white"></i>
+                    </div>
+                    <h3 style="font-size: 1.3rem; font-weight: 600; color: #2d3748; margin-bottom: 1rem;">Community</h3>
+                    <p style="color: #718096; font-size: 0.9rem;">Community development and empowerment stories</p>
+                    <a href="#community" class="category-link" style="color: #4facfe; font-weight: 500; text-decoration: none;" onclick="toggleCategory('community'); return false;">View Stories →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expandable Category Content -->
+    <section class="section" id="category-content">
+        <div class="container">
+            
+            <!-- Clean Water Stories -->
+            <div id="water-content" class="category-content" style="display: none;">
+                <div class="content-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="category-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-tint text-3xl text-white"></i>
+                    </div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; color: #667eea; margin-bottom: 1rem;">Clean Water Stories</h2>
+                    <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Transforming communities through access to clean, safe water</p>
+                </div>
+                
+                <div class="stories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #667eea;">
+                        <h3 style="color: #667eea; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">💧 The Miracle of Maji Moto Village</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">In Tanzania's Dodoma region, the village of Maji Moto (meaning "Hot Water") had been suffering from severe water scarcity for over 20 years. Women and children walked 8 kilometers daily to fetch contaminated water from a distant river.</p>
+                        <div class="impact-stats" style="background: #f8fafc; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-around; text-align: center;">
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #667eea;">2,500+</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Lives Changed</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #667eea;">8km</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Walk Eliminated</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #667eea;">0%</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Waterborne Diseases</div>
+                                </div>
+                            </div>
+                        </div>
+                        <blockquote style="border-left: 3px solid #667eea; padding-left: 1rem; font-style: italic; color: #4a5568;">
+                            "Now my children can attend school regularly. The clean water has brought health and hope to our village." - Mama Grace, Village Elder
+                        </blockquote>
+                    </div>
+                    
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #667eea;">
+                        <h3 style="color: #667eea; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">🚰 From Dust to Diamonds: Kenya's Water Revolution</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">In Western Kenya's Bungoma County, five communities were experiencing severe drought conditions. Our innovative rainwater harvesting project combined traditional knowledge with modern technology.</p>
+                        <div class="tech-features" style="background: #e6f3ff; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <h4 style="color: #667eea; font-weight: 600; margin-bottom: 0.5rem;">🔧 Technology Used:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0;">✅ Solar-powered water pumps</li>
+                                <li style="padding: 0.25rem 0;">✅ UV water purification systems</li>
+                                <li style="padding: 0.25rem 0;">✅ Smart water meters for fair distribution</li>
+                                <li style="padding: 0.25rem 0;">✅ SMS alerts for maintenance</li>
+                            </ul>
+                        </div>
+                        <div class="success-metric" style="text-align: center; padding: 1rem; background: linear-gradient(135deg, #667eea20, #764ba220); border-radius: 8px;">
+                            <div style="font-size: 2rem; font-weight: 700; color: #667eea;">15,000</div>
+                            <div style="color: #718096;">Liters of Clean Water Daily</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Healthcare Stories -->
+            <div id="healthcare-content" class="category-content" style="display: none;">
+                <div class="content-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="category-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-heartbeat text-3xl text-white"></i>
+                    </div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; color: #f093fb; margin-bottom: 1rem;">Healthcare Stories</h2>
+                    <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Bringing hope and healing to underserved communities</p>
+                </div>
+                
+                <div class="stories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #f093fb;">
+                        <h3 style="color: #f093fb; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">🏥 The Mobile Clinic That Saved Lives</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">Our mobile health clinic journeyed through 12 remote villages in Uganda, bringing essential medical care to communities that hadn't seen a doctor in over 5 years.</p>
+                        <div class="medical-stats" style="background: #fef7f0; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-around; text-align: center;">
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #f093fb;">1,200+</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Patients Treated</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #f093fb;">50</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Lives Saved</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #f093fb;">12</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Villages Reached</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="patient-story" style="background: #fff5f5; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <h4 style="color: #f5576c; font-weight: 600; margin-bottom: 0.5rem;">👶 Baby Sarah's Miracle</h4>
+                            <p style="color: #718096; font-size: 0.9rem;">3-month-old Sarah was suffering from severe pneumonia. Our mobile clinic's emergency care and timely medication saved her life. Today, she's a healthy, thriving baby.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #f093fb;">
+                        <h3 style="color: #f093fb; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">🩺 From Fear to Hope: Mental Health Matters</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">We launched East Africa's first rural mental health initiative, addressing trauma and depression in communities affected by conflict and displacement.</p>
+                        <div class="program-impact" style="background: #fdf2f8; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <h4 style="color: #f093fb; font-weight: 600; margin-bottom: 0.5rem;">🧠 Services Provided:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0;">✅ Trauma counseling for 300+ survivors</li>
+                                <li style="padding: 0.25rem 0;">✅ Group therapy sessions</li>
+                                <li style="padding: 0.25rem 0;">✅ Traditional healer integration</li>
+                                <li style="padding: 0.25rem 0;">✅ 24/7 crisis hotline</li>
+                            </ul>
+                        </div>
+                        <blockquote style="border-left: 3px solid #f093fb; padding-left: 1rem; font-style: italic; color: #4a5568;">
+                            "I thought my life was over after losing everything. The counseling gave me back my hope and my children." - Refugee Mother
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education Stories -->
+            <div id="education-content" class="category-content" style="display: none;">
+                <div class="content-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="category-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-graduation-cap text-3xl text-white"></i>
+                    </div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; color: #43e97b; margin-bottom: 1rem;">Education Stories</h2>
+                    <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Empowering minds, transforming futures through education</p>
+                </div>
+                
+                <div class="stories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #43e97b;">
+                        <h3 style="color: #43e97b; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">📚 From Farm Labor to University Dreams</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">Meet James, a 16-year-old from Western Kenya who was working on farms to support his family. Our scholarship program changed his life trajectory completely.</p>
+                        <div class="education-journey" style="background: #f0fdf4; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <h4 style="color: #43e97b; font-weight: 600; margin-bottom: 0.5rem;">🎓 James's Journey:</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; text-align: center;">
+                                <div style="padding: 0.5rem; background: white; border-radius: 6px;">
+                                    <div style="font-size: 0.8rem; color: #718096;">Before</div>
+                                    <div style="font-weight: 600; color: #dc2626;">Farm Labor</div>
+                                </div>
+                                <div style="padding: 0.5rem; background: white; border-radius: 6px;">
+                                    <div style="font-size: 0.8rem; color: #718096;">After</div>
+                                    <div style="font-weight: 600; color: #16a34a;">Top Student</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="achievements" style="background: #ecfdf5; padding: 1rem; border-radius: 8px;">
+                            <h4 style="color: #43e97b; font-weight: 600; margin-bottom: 0.5rem;">🏆 Achievements:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0;">✅ Scored A- in KCSE exams</li>
+                                <li style="padding: 0.25rem 0;">✅ Accepted to University of Nairobi</li>
+                                <li style="padding: 0.25rem 0;">✅ Now mentors other students</li>
+                                <li style="padding: 0.25rem 0;">✅ Dreams of becoming an engineer</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #43e97b;">
+                        <h3 style="color: #43e97b; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">👩‍🏫 The Teacher Who Transformed 500 Lives</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">Ms. Amina, a dedicated teacher in Tanzania's remote village, has been using our educational resources to create a learning revolution.</p>
+                        <div class="classroom-impact" style="background: #f0fdf4; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-around; text-align: center;">
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #43e97b;">500+</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Students Taught</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #43e97b;">95%</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Pass Rate</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #43e97b;">10</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Years of Service</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="innovation-spotlight" style="background: #dcfce7; padding: 1rem; border-radius: 8px;">
+                            <h4 style="color: #43e97b; font-weight: 600; margin-bottom: 0.5rem;">💡 Innovations:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0;">✅ Mobile learning apps on donated tablets</li>
+                                <li style="padding: 0.25rem 0;">✅ Community library with 2,000+ books</li>
+                                <li style="padding: 0.25rem 0;">✅ Weekend STEM workshops</li>
+                                <li style="padding: 0.25rem 0;">✅ Parent-teacher engagement program</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Community Stories -->
+            <div id="community-content" class="category-content" style="display: none;">
+                <div class="content-header" style="text-align: center; margin-bottom: 3rem;">
+                    <div class="category-icon" style="width: 80px; height: 80px; background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem;">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h2 style="font-size: 2.5rem; font-weight: 700; color: #4facfe; margin-bottom: 1rem;">Community Stories</h2>
+                    <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Building stronger communities through unity and empowerment</p>
+                </div>
+                
+                <div class="stories-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #4facfe;">
+                        <h3 style="color: #4facfe; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">🤝 The Women's Cooperative That Changed Everything</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">In rural Uganda, 50 women came together to form a cooperative that transformed their entire community's economy and social fabric.</p>
+                        <div class="cooperative-stats" style="background: #f0f9ff; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-around; text-align: center;">
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #4facfe;">50</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Women Members</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #4facfe;">300%</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Income Increase</div>
+                                </div>
+                                <div>
+                                    <div style="font-size: 1.5rem; font-weight: 700; color: #4facfe;">5</div>
+                                    <div style="font-size: 0.9rem; color: #718096;">Businesses Started</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="business-ventures" style="background: #e0f2fe; padding: 1rem; border-radius: 8px;">
+                            <h4 style="color: #4facfe; font-weight: 600; margin-bottom: 0.5rem;">💼 Successful Ventures:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.25rem 0;">✅ Handicraft export business</li>
+                                <li style="padding: 0.25rem 0;">✅ Community bakery</li>
+                                <li style="padding: 0.25rem 0;">✅ Sustainable farming collective</li>
+                                <li style="padding: 0.25rem 0;">✅ Microfinance program</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="story-card" style="background: white; border-radius: 15px; padding: 2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-left: 4px solid #4facfe;">
+                        <h3 style="color: #4facfe; font-size: 1.3rem; font-weight: 600; margin-bottom: 1rem;">🌱 Youth Leadership Revolution</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1rem;">Our youth empowerment program in Western Kenya has created a new generation of community leaders and change-makers.</p>
+                        <div class="leadership-program" style="background: #f0f9ff; padding: 1rem; border-radius: 8px; margin: 1rem 0;">
+                            <h4 style="color: #4facfe; font-weight: 600; margin-bottom: 0.5rem;">🎯 Program Components:</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem;">
+                                <div style="padding: 0.5rem; background: white; border-radius: 6px; text-align: center;">
+                                    <div style="font-weight: 600; color: #4facfe;">Leadership Training</div>
+                                </div>
+                                <div style="padding: 0.5rem; background: white; border-radius: 6px; text-align: center;">
+                                    <div style="font-weight: 600; color: #4facfe;">Entrepreneurship</div>
+                                </div>
+                                <div style="padding: 0.5rem; background: white; border-radius: 6px; text-align: center;">
+                                    <div style="font-weight: 600; color: #4facfe;">Civic Education</div>
+                                </div>
+                                <div style="padding: 0.5rem; background: white; border-radius: 6px; text-align: center;">
+                                    <div style="font-weight: 600; color: #4facfe;">Environmental Action</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="success-story" style="background: #dbeafe; padding: 1rem; border-radius: 8px;">
+                            <h4 style="color: #4facfe; font-weight: 600; margin-bottom: 0.5rem;">⭐ Success Story: Kevin's Journey</h4>
+                            <p style="color: #718096; font-size: 0.9rem;">At 19, Kevin started a community garden that now feeds 200 families and employs 15 youth. He's now training other young leaders across the region.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="section" id="latest-posts">
+        <div class="container">
+            <div class="section-title" style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem;">Latest Stories</h2>
+                <p style="font-size: 1.2rem; color: #718096; max-width: 600px; margin: 0 auto;">Recent updates from our work across Africa</p>
+            </div>
+            
+            <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                <!-- Blog Post 1 -->
+                <article class="blog-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; animation: fadeInUp 0.8s ease-out;">
+                    <div class="blog-image" style="height: 200px; overflow: hidden;">
+                        <img src="images/water supply.jpg" alt="Clean Water Project Success" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    </div>
+                    <div class="blog-content" style="padding: 2rem;">
+                        <div class="blog-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.9rem; color: #718096;">
+                            <span class="blog-date"><i class="fas fa-calendar mr-1"></i> December 15, 2024</span>
+                            <span class="blog-category" style="background: #e0f2fe; color: #0277bd; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Clean Water</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem;">New Well Brings Clean Water to 500 Families in Tanzania</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1.5rem;">We successfully completed a new borehole project in Tanzania's Dodoma region, providing clean water access to over 500 families who previously had to walk miles for water.</p>
+                        <a href="#" class="read-more" style="color: #667eea; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read Full Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 2 -->
+                <article class="blog-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; animation: fadeInUp 0.8s ease-out 0.1s both;">
+                    <div class="blog-image" style="height: 200px; overflow: hidden;">
+                        <img src="images/healthcare.jpg" alt="Healthcare Camp Success" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    </div>
+                    <div class="blog-content" style="padding: 2rem;">
+                        <div class="blog-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.9rem; color: #718096;">
+                            <span class="blog-date"><i class="fas fa-calendar mr-1"></i> December 10, 2024</span>
+                            <span class="blog-category" style="background: #fce4ec; color: #059669; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Healthcare</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; font-weight: 700; color: #2d3748; margin-bottom: 1rem;">Mobile Health Clinic Reaches 1,000+ Patients in Rural Uganda</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1.5rem;">Our mobile health team conducted a successful medical camp in rural Uganda, providing essential healthcare services to over 1,000 community members.</p>
+                        <a href="#" class="read-more" style="color: #f093fb; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read Full Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+                
+                <!-- Blog Post 3 -->
+                <article class="blog-card" style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; animation: fadeInUp 0.8s ease-out 0.2s both;">
+                    <div class="blog-image" style="height: 200px; overflow: hidden;">
+                        <img src="images/Children schooling.jpg" alt="Education Success Story" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+                    </div>
+                    <div class="blog-content" style="padding: 2rem;">
+                        <div class="blog-meta" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; font-size: 0.9rem; color: #718096;">
+                            <span class="blog-date"><i class="fas fa-calendar mr-1"></i> December 5, 2024</span>
+                            <span class="blog-category" style="background: #d1fae5; color: #059669; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Education</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; font font-weight: 700; color: #2d3748; margin-bottom: 1rem;">Scholarship Program Changes 50 Students' Lives in Western Kenya</h3>
+                        <p style="color: #718096; line-height: 1.6; margin-bottom: 1.5rem;">Our scholarship program has supported 50 students in Western Kenya, providing them with educational opportunities that were previously out of reach.</p>
+                        <a href="#" class="read-more" style="color: #43e97b; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+                            Read Full Story <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-primary btn-large" id="loadMoreBtn" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 1rem 2.5rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; border: none; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-plus mr-2"></i>Load More Stories
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section bg-gradient" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="container text-center">
+            <div class="section-title" style="text-align: center; margin-bottom: 2rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Stay Updated</h2>
+                <p style="font-size: 1.2rem; opacity: 0.9;">Get the latest stories and impact updates delivered to your inbox</p>
+            </div>
+            
+            <form class="newsletter-form" style="max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+                <input type="email" placeholder="Enter your email address" required style="padding: 1rem; border: none; border-radius: 10px; font-size: 1rem;">
+                <button type="submit" class="btn btn-accent btn-large" style="background: white; color: #667eea; padding: 1rem 2rem; font-size: 1.1rem; font-weight: 600; border-radius: 50px; border: none; cursor: pointer; transition: all 0.3s ease;">
+                    <i class="fas fa-envelope mr-2"></i>Subscribe
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oseko Foundation</h3>
+                    <p>Transforming lives across Africa through sustainable development and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" aria-label="Facebook" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" aria-label="Twitter" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" aria-label="Instagram" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" aria-label="YouTube" class="social-link">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@osekofoundation.org</p>
+                    <p><i class="fas fa-phone"></i> +254 720 123456</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Kampala, Uganda</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enhanced Animations CSS -->
+    <style>
+        /* Hero Section Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        @keyframes shimmer {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        /* Floating Hearts Animation */
+        .floating-heart {
+            position: absolute;
+            font-size: 2rem;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Hero Hover Effects */
+        .hero-buttons .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        
+        /* Category Cards Hover Effects */
+        .category-card:hover {
+            transform: translateY(-8px);
+            border-color: #667eea;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        
+        .category-card:hover .category-icon {
+            transform: scale(1.1);
+        }
+        
+        /* Blog Cards Hover Effects */
+        .blog-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        .blog-card:hover .blog-image img {
+            transform: scale(1.05);
+        }
+        
+        /* Read More Button */
+        .read-more {
+            transition: all 0.3s ease;
+        }
+        
+        .read-more:hover {
+            transform: translateX(5px);
+        }
+        
+        /* Newsletter Form */
+        .newsletter-form input {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        .newsletter-form input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.2);
+        }
+        
+        /* Load More Button */
+        #loadMoreBtn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem !important;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem !important;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .blog-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .category-card {
+                padding: 1.5rem;
+            }
+            
+            .blog-card {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Category Content Styles */
+        .category-content {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 20px;
+            padding: 3rem 2rem;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .story-card {
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .story-card:hover::before {
+            left: 100%;
+        }
+        
+        .story-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .impact-stats > div,
+        .medical-stats > div,
+        .classroom-impact > div,
+        .cooperative-stats > div {
+            transition: transform 0.3s ease;
+        }
+        
+        .impact-stats > div:hover,
+        .medical-stats > div:hover,
+        .classroom-impact > div:hover,
+        .cooperative-stats > div:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Category link hover effects */
+        .category-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .category-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+        
+        .category-link:hover::after {
+            width: 100%;
+        }
+        
+        .category-link:hover {
+            transform: translateX(5px);
+        }
+        
+        /* Close button for category content */
+        .category-content::after {
+            content: '✕ Close';
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(0,0,0,0.1);
+            color: #4a5568;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+        
+        .category-content:hover::after {
+            background: rgba(0,0,0,0.2);
+            transform: scale(1.05);
+        }
+        
+        .category-content::after:active {
+            transform: scale(0.95);
+        }
+    </style>
+
+    <script src="main.js"></script>
+    <script>
+        // Blog functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load More functionality
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    // Simulate loading more posts
+                    this.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Loading...';
+                    
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fas fa-plus mr-2"></i>Load More Stories';
+                        
+                        // Add more blog posts (simulation)
+                        const blogGrid = document.querySelector('.blog-grid');
+                        const newPost = document.createElement('article');
+                        newPost.className = 'blog-card';
+                        newPost.innerHTML = `
+                            <div class="blog-image" style="height: 200px; overflow: hidden;">
+                                <img src="images/women empowerment.jpg" alt="Community Empowerment" style="width: 100%; height: 100%; object-fit: cover;">
+                            </div>
+                            <div class="blog-content" style="padding: 2rem;">
+                                <div class="blog-meta">
+                                    <span class="blog-date"><i class="fas fa-calendar mr-1"></i> December 1, 2024</span>
+                                    <span class="blog-category" style="background: #e0f2fe; color: #0277bd; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Community</span>
+                                </div>
+                                <h3>Women's Empowerment Workshop Success in Tanzania</h3>
+                                <p>We conducted a successful women's empowerment workshop in Tanzania, training 50 women in skills development and business management.</p>
+                                <a href="#" class="read-more">Read Full Story <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        `;
+                        
+                        blogGrid.appendChild(newPost);
+                        
+                        // Add animation to new post
+                        setTimeout(() => {
+                            newPost.style.animation = 'fadeInUp 0.8s ease-out';
+                        }, 100);
+                        
+                    }, 1500);
+                });
+            }
+            
+            // Newsletter form submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = this.querySelector('input[type="email"]').value;
+                    const submitBtn = this.querySelector('button[type="submit"]');
+                    
+                    if (email) {
+                        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Subscribing...';
+                        
+                        // Simulate subscription
+                        setTimeout(() => {
+                            submitBtn.innerHTML = '<i class="fas fa-check mr-2"></i>Subscribed!';
+                            this.reset();
+                            
+                            // Show success message
+                            const successMsg = document.createElement('div');
+                            successMsg.className = 'success-message';
+                            successMsg.textContent = 'Thank you for subscribing! You\'ll receive our latest stories and updates.';
+                            successMsg.style.css = `
+                                background: #10b981;
+                                color: white;
+                                padding: 1rem;
+                                border-radius: 10px;
+                                margin-top: 1rem;
+                                text-align: center;
+                                animation: fadeInUp 0.5s ease-out;
+                            `;
+                            this.parentNode.insertBefore(successMsg, this);
+                            
+                            setTimeout(() => {
+                                successMsg.remove();
+                            }, 3000);
+                        }, 2000);
+                    }
+                });
+            }
+            
+            // Smooth scroll for category links
+            document.querySelectorAll('.category-link').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+            
+            // Smooth scroll for read more links
+            document.querySelectorAll('.read-more').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId.startsWith('#')) {
+                        const targetElement = document.querySelector(targetId);
+                        if (targetElement) {
+                            targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+        });
+        
+        // Category content toggle function
+        function toggleCategory(category) {
+            // Hide all category content sections
+            const allContent = document.querySelectorAll('.category-content');
+            allContent.forEach(content => {
+                content.style.display = 'none';
+            });
+            
+            // Show selected category content
+            const selectedContent = document.getElementById(category + '-content');
+            if (selectedContent) {
+                selectedContent.style.display = 'block';
+                
+                // Smooth scroll to the content
+                selectedContent.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                
+                // Add fade-in animation
+                selectedContent.style.opacity = '0';
+                selectedContent.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    selectedContent.style.transition = 'all 0.6s ease-out';
+                    selectedContent.style.opacity = '1';
+                    selectedContent.style.transform = 'translateY(0)';
+                }, 100);
+            }
+        }
+        
+        // Close category content when clicking on the close button
+        document.addEventListener('click', function(e) {
+            if (e.target.textContent.includes('Close') && e.target.parentElement.classList.contains('category-content')) {
+                e.target.parentElement.style.display = 'none';
+            }
+        });
+        
+        // Make function globally accessible
+        window.toggleCategory = toggleCategory;
+    </script>
+</body>
+</html>

@@ -26,7 +26,7 @@
     <!-- Modern Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="about.html" class="logo">
+            <a href="index.html" class="logo">
                 <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
                 <span>Oseko Foundation</span>
             </a>
@@ -39,77 +39,1198 @@
             
             <ul class="nav-menu">
                 <li><a href="about.html" class="nav-link">About Us</a></li>
-                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
             </ul>
         </div>
     </nav>
 
+<style>
+.projects-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.floating-element {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0.3;
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(240, 147, 251, 0.4);
+    background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.program-categories {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.categories-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.category-card.enhanced {
+    background: white;
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 0.8s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card.enhanced:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(102, 126, 234, 0.15);
+}
+
+.category-header {
+    padding: 2rem 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.category-badge {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.category-content {
+    padding: 0 2rem 1rem;
+    flex: 1;
+}
+
+.category-features {
+    margin: 1.5rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: #4b5563;
+    font-size: 0.9rem;
+}
+
+.feature-item i {
+    color: #10b981;
+    font-size: 0.8rem;
+}
+
+.category-progress {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 12px;
+}
+
+.progress-label {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 2s ease;
+    position: relative;
+}
+
+.progress-text {
+    font-size: 0.85rem;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.category-footer {
+    padding: 1.5rem 2rem 2rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.icon-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: inherit;
+    border-radius: inherit;
+    opacity: 0.1;
+    z-index: -1;
+    filter: blur(8px);
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+}
+
+.category-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+}
+
+.category-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 2rem;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.category-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: shimmer 3s infinite;
+}
+
+.education-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.healthcare-icon {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.environment-icon {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.community-icon {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.category-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2d3748;
+}
+
+.category-card p {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.category-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.category-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-20px) rotate(5deg); 
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(45deg) translateX(100%);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg) translateX(100%);
+    }
+}
+
+/* Featured Projects Styles */
+.filter-btn {
+    background: white;
+    border: 2px solid #e5e7eb;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #6b7280;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-color: #667eea;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.featured-project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.featured-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+}
+
+.project-image-wrapper {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.project-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.featured-project-card:hover .project-main-image {
+    transform: scale(1.1);
+}
+
+.project-overlay-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.featured-project-card:hover .project-overlay-content {
+    transform: translateY(0);
+}
+
+.project-category-badge {
+    background: linear-gradient(135deg, #f093fb, #f5576c);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.project-overlay-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.project-overlay-content p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.project-details {
+    padding: 2rem;
+}
+
+.project-stats-mini {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.mini-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
+.mini-stat i {
+    color: #667eea;
+    font-size: 1rem;
+}
+
+.project-description {
+    margin-bottom: 1.5rem;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.project-progress-mini {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.mini-progress-bar {
+    flex: 1;
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.mini-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #10b981, #059669);
+    border-radius: 10px;
+    transition: width 1s ease;
+}
+
+.project-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+@media (max-width: 768px) {
+    .featured-projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .projects-filter {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .filter-btn {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+/* Modern Project Cards Styles */
+.country-projects-section {
+    margin-bottom: 4rem;
+}
+
+.country-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.country-flag {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.country-info {
+    flex: 1;
+}
+
+.country-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.country-subtitle {
+    color: #6b7280;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.country-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.country-stat {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.country-stat i {
+    font-size: 1.1rem;
+}
+
+.projects-grid-modern {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.modern-project-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.modern-project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+}
+
+.project-image-enhanced {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.modern-project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+.image-overlay-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    pointer-events: none;
+}
+
+.project-category-tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.project-content-enhanced {
+    padding: 2rem;
+}
+
+.project-header-content {
+    margin-bottom: 1.5rem;
+}
+
+.project-title-enhanced {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8fafc;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.meta-item i {
+    color: #667eea;
+}
+
+.project-description-enhanced {
+    color: #6b7280;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+}
+
+.project-impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.impact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #f8fafc;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.impact-item:hover {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transform: translateY(-3px);
+}
+
+.impact-item:hover .impact-icon,
+.impact-item:hover .impact-details {
+    color: white;
+}
+
+.impact-icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.impact-icon i {
+    font-size: 1.2rem;
+    color: #667eea;
+}
+
+.impact-details {
+    text-align: center;
+}
+
+.impact-number {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.impact-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.project-footer-enhanced {
+    padding: 0 2rem 2rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.project-cta-enhanced {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    justify-content: center;
+}
+
+.project-cta-enhanced:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.country-cta-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.country-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.country-cta-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+}
+
+@media (max-width: 768px) {
+    .country-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .projects-grid-modern {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-meta {
+        justify-content: center;
+    }
+}
+</style>
+
     <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(135deg, #4ECDC4 0%, #45B7D1 50%, #FF6B6B 100%); padding-top: 120px; padding-bottom: 80px;">
-        <div class="container text-center">
-            <h1 class="hero-title">Our Projects in East Africa</h1>
-            <p class="hero-subtitle">
-                Discover the comprehensive range of projects we're implementing across Kenya, Uganda, and Tanzania. From education and healthcare to environmental conservation and community development, we're creating lasting positive change in East Africa.
-            </p>
-            <div class="hero-buttons">
-                <a href="donate.html" class="cta-button">
-                    <i class="fas fa-heart"></i> Support Our Projects
-                </a>
-                <a href="contact.html" class="btn btn-secondary">
-                    <i class="fas fa-hands-helping"></i> Get Involved
-                </a>
+<section class="projects-hero">
+    <!-- Animated Background Elements -->
+    <div class="hero-bg-animation">
+        <div class="floating-element" style="left: 10%; animation-delay: 0s; top: 20%;">🌍</div>
+        <div class="floating-element" style="left: 25%; animation-delay: 2s; top: 60%;">📚</div>
+        <div class="floating-element" style="left: 45%; animation-delay: 1s; top: 30%;">🏥</div>
+        <div class="floating-element" style="left: 65%; animation-delay: 3s; top: 70%;">🌱</div>
+        <div class="floating-element" style="left: 80%; animation-delay: 4s; top: 40%;">🤝</div>
+        <div class="floating-element" style="left: 90%; animation-delay: 2.5s; top: 80%;">💧</div>
+    </div>
+    
+    <div class="hero-content">
+        <div class="hero-badge" style="background: rgba(255,255,255,0.2); backdrop-filter: blur(10px); border-radius: 50px; padding: 0.5rem 1.5rem; display: inline-block; margin-bottom: 2rem; animation: fadeInUp 0.8s ease-out;">
+            <i class="fas fa-award mr-2"></i>
+            <span style="color: white; font-weight: 600;">Active in 3 Countries</span>
+        </div>
+        <h1 class="hero-title">Transforming Communities Across East Africa</h1>
+        <p class="hero-subtitle">
+            From education and healthcare to environmental conservation, our projects are creating lasting positive change in Kenya, Uganda, and Tanzania. Join us in building a brighter future for millions.
+        </p>
+        <div class="hero-stats" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 3rem 0; max-width: 600px; margin-left: auto; margin-right: auto;">
+            <div class="stat-item" style="text-align: center; animation: fadeInUp 0.8s ease-out 0.2s both;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: #fbbf24; margin-bottom: 0.5rem;">50+</div>
+                <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Active Projects</div>
+            </div>
+            <div class="stat-item" style="text-align: center; animation: fadeInUp 0.8s ease-out 0.4s both;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: #34d399; margin-bottom: 0.5rem;">25K+</div>
+                <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Lives Impacted</div>
+            </div>
+            <div class="stat-item" style="text-align: center; animation: fadeInUp 0.8s ease-out 0.6s both;">
+                <div style="font-size: 2.5rem; font-weight: 800; color: #60a5fa; margin-bottom: 0.5rem;">100+</div>
+                <div style="color: rgba(255,255,255,0.9); font-size: 0.9rem;">Partners</div>
             </div>
         </div>
-    </section>
+        <div class="hero-buttons" style="animation: fadeInUp 0.8s ease-out 0.8s both;">
+            <a href="#projects-overview" class="cta-button">
+                <i class="fas fa-compass"></i> Explore Projects
+            </a>
+            <a href="donate.html" class="btn-secondary">
+                <i class="fas fa-heart"></i> Support Our Work
+            </a>
+        </div>
+    </div>
+</section>
 
-    <!-- Program Categories Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Program Categories</h2>
-                <p class="section-subtitle">Comprehensive development initiatives across multiple sectors</p>
-            </div>
+<!-- Program Categories Section -->
+<section id="projects-overview" class="program-categories">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Program Categories</h2>
+            <p class="section-subtitle">Comprehensive development initiatives across multiple sectors</p>
+        </div>
 
-            <div class="grid grid-4">
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+        <div class="categories-showcase">
+            <!-- Education Category -->
+            <div class="category-card enhanced" style="animation-delay: 0.1s;">
+                <div class="category-header">
+                    <div class="category-icon education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="icon-glow"></div>
                     </div>
+                    <div class="category-badge">
+                        <span>20+ Schools</span>
+                    </div>
+                </div>
+                <div class="category-content">
                     <h3>Education</h3>
                     <p>Building schools, training teachers, and providing educational resources to improve learning outcomes for children across Africa.</p>
-                    <a href="education.html" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heartbeat text-primary text-2xl"></i>
+                    <div class="category-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>School Construction</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Teacher Training</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Learning Materials</span>
+                        </div>
                     </div>
+                    <div class="category-progress">
+                        <div class="progress-label">Impact Progress</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%; background: linear-gradient(90deg, #667eea, #764ba2);"></div>
+                        </div>
+                        <span class="progress-text">5,000+ Students</span>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <a href="education.html" class="category-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Healthcare Category -->
+            <div class="category-card enhanced" style="animation-delay: 0.2s;">
+                <div class="category-header">
+                    <div class="category-icon healthcare-icon">
+                        <i class="fas fa-heartbeat"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="category-badge">
+                        <span>15+ Clinics</span>
+                    </div>
+                </div>
+                <div class="category-content">
                     <h3>Healthcare</h3>
                     <p>Establishing health clinics, providing medical care, and implementing disease prevention programs in underserved communities.</p>
-                    <a href="healthcare.html" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-leaf text-primary text-2xl"></i>
+                    <div class="category-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Medical Facilities</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Healthcare Workers</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Disease Prevention</span>
+                        </div>
                     </div>
+                    <div class="category-progress">
+                        <div class="progress-label">Impact Progress</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%; background: linear-gradient(90deg, #f093fb, #f5576c);"></div>
+                        </div>
+                        <span class="progress-text">8,500+ Treatments</span>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <a href="healthcare.html" class="category-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Environment Category -->
+            <div class="category-card enhanced" style="animation-delay: 0.3s;">
+                <div class="category-header">
+                    <div class="category-icon environment-icon">
+                        <i class="fas fa-leaf"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="category-badge">
+                        <span>30+ Projects</span>
+                    </div>
+                </div>
+                <div class="category-content">
                     <h3>Environment</h3>
                     <p>Promoting sustainability through reforestation, clean energy initiatives, and climate education programs.</p>
-                    <a href="environment.html" class="btn btn-primary">Learn More</a>
-                </div>
-                <div class="card text-center">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-hands-helping text-primary text-2xl"></i>
+                    <div class="category-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reforestation</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean Energy</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Climate Education</span>
+                        </div>
                     </div>
-                    <h3>Community Development</h3>
-                    <p>Empowering communities through capacity building, infrastructure development, and economic empowerment programs.</p>
-                    <a href="community.html" class="btn btn-primary">Learn More</a>
+                    <div class="category-progress">
+                        <div class="progress-label">Impact Progress</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 85%; background: linear-gradient(90deg, #4facfe, #00f2fe);"></div>
+                        </div>
+                        <span class="progress-text">10,000+ Trees</span>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <a href="environment.html" class="category-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Community Category -->
+            <div class="category-card enhanced" style="animation-delay: 0.4s;">
+                <div class="category-header">
+                    <div class="category-icon community-icon">
+                        <i class="fas fa-users"></i>
+                        <div class="icon-glow"></div>
+                    </div>
+                    <div class="category-badge">
+                        <span>25+ Programs</span>
+                    </div>
+                </div>
+                <div class="category-content">
+                    <h3>Community</h3>
+                    <p>Strengthening local communities through infrastructure development, economic empowerment, and social support programs.</p>
+                    <div class="category-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Infrastructure</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Economic Empowerment</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Social Support</span>
+                        </div>
+                    </div>
+                    <div class="category-progress">
+                        <div class="progress-label">Impact Progress</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%; background: linear-gradient(90deg, #43e97b, #38f9d7);"></div>
+                        </div>
+                        <span class="progress-text">50+ Communities</span>
+                    </div>
+                </div>
+                <div class="category-footer">
+                    <a href="community.html" class="category-btn">
+                        <i class="fas fa-arrow-right"></i> Learn More
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+                <!-- Interactive Projects Showcase -->
+<section class="projects-showcase-section" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 5rem 0;">
+    <div class="container">
+        <div class="section-title">
+            <h2>Featured Projects</h2>
+            <p class="section-subtitle">Highlighting our most impactful initiatives across East Africa</p>
+        </div>
 
-    <!-- East Africa Projects Section -->
+        <div class="projects-filter" style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 3rem; flex-wrap: wrap;">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="healthcare">Healthcare</button>
+            <button class="filter-btn" data-filter="environment">Environment</button>
+            <button class="filter-btn" data-filter="community">Community</button>
+        </div>
+
+        <div class="featured-projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+            <!-- Featured Project 1 -->
+            <div class="featured-project-card" data-category="education">
+                <div class="project-image-wrapper">
+                    <img src="https://i.pinimg.com/564x/f6/9d/94/f69d947f717ce1d6b35da89e4a8af634.jpg" 
+                         alt="Education Initiative" 
+                         class="project-main-image">
+                    <div class="project-overlay-content">
+                        <div class="project-category-badge">Education</div>
+                        <h3>School Construction Program</h3>
+                        <p>Building modern educational facilities in rural communities</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-stats-mini">
+                        <div class="mini-stat">
+                            <i class="fas fa-school"></i>
+                            <span>20+ Schools</span>
+                        </div>
+                        <div class="mini-stat">
+                            <i class="fas fa-users"></i>
+                            <span>5,000+ Students</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>We're constructing modern schools equipped with libraries, computer labs, and sports facilities to provide quality education environments.</p>
+                    </div>
+                    <div class="project-progress-mini">
+                        <span>75% Complete</span>
+                        <div class="mini-progress-bar">
+                            <div class="mini-progress-fill" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <a href="education.html" class="project-cta">
+                        <i class="fas fa-arrow-right"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Featured Project 2 -->
+            <div class="featured-project-card" data-category="healthcare">
+                <div class="project-image-wrapper">
+                    <img src="https://i.pinimg.com/564x/8a/9b/6c/8a9b6c6c8f4a4b8e9d9c7d5e8f8a8b.jpg" 
+                         alt="Healthcare Initiative" 
+                         class="project-main-image">
+                    <div class="project-overlay-content">
+                        <div class="project-category-badge">Healthcare</div>
+                        <h3>Mobile Health Clinics</h3>
+                        <p>Bringing medical services to remote communities</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-stats-mini">
+                        <div class="mini-stat">
+                            <i class="fas fa-hospital"></i>
+                            <span>15+ Clinics</span>
+                        </div>
+                        <div class="mini-stat">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>8,500+ Treatments</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>Our mobile clinics provide essential healthcare services, vaccinations, and health education to underserved populations.</p>
+                    </div>
+                    <div class="project-progress-mini">
+                        <span>60% Complete</span>
+                        <div class="mini-progress-bar">
+                            <div class="mini-progress-fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <a href="healthcare.html" class="project-cta">
+                        <i class="fas fa-arrow-right"></i> View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Featured Project 3 -->
+            <div class="featured-project-card" data-category="environment">
+                <div class="project-image-wrapper">
+                    <img src="https://i.pinimg.com/564x/1a/2b/3c/1a2b3c3c1d2e2f2a2b3c3d2e2f2a3b3c.jpg" 
+                         alt="Environment Initiative" 
+                         class="project-main-image">
+                    <div class="project-overlay-content">
+                        <div class="project-category-badge">Environment</div>
+                        <h3>Reforestation Project</h3>
+                        <p>Planting trees for a sustainable future</p>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="project-stats-mini">
+                        <div class="mini-stat">
+                            <i class="fas fa-tree"></i>
+                            <span>10,000+ Trees</span>
+                        </div>
+                        <div class="mini-stat">
+                            <i class="fas fa-leaf"></i>
+                            <span>30+ Hectares</span>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <p>We're planting native tree species and establishing community forests to combat climate change and restore ecosystems.</p>
+                    </div>
+                    <div class="project-progress-mini">
+                        <span>85% Complete</span>
+                        <div class="mini-progress-bar">
+                            <div class="mini-progress-fill" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <a href="environment.html" class="project-cta">
+                        <i class="fas fa-arrow-right"></i> View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Enhanced Country Projects Section -->
     <section class="section bg-gray-100">
         <div class="container">
             <div class="section-title">
@@ -118,86 +1239,148 @@
             </div>
 
             <!-- Kenya Projects -->
-            <div class="project-section">
-                <div class="project-header">
-                    <h3 class="project-title">🇰🇪 Kenya Projects</h3>
-                    <p class="project-subtitle">Empowering communities through education, food security, and sustainable development</p>
+            <div class="country-projects-section">
+                <div class="country-header">
+                    <div class="country-flag">🇰🇪</div>
+                    <div class="country-info">
+                        <h3 class="country-title">Kenya</h3>
+                        <p class="country-subtitle">Empowering communities through education, food security, and sustainable development</p>
+                    </div>
+                    <div class="country-stats">
+                        <div class="country-stat">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Western Kenya</span>
+                        </div>
+                        <div class="country-stat">
+                            <i class="fas fa-calendar"></i>
+                            <span>Since 2019</span>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="projects-grid">
+                <div class="projects-grid-modern">
                     <!-- Education Program -->
-                    <div class="project-card">
-                        <div class="project-image-container">
-                            <img src="images/learning prctices 2.jpg" 
+                    <div class="modern-project-card">
+                        <div class="project-image-enhanced">
+                            <img src="https://i.pinimg.com/564x/f6/9d/94/f69d947f717ce1d6b35da89e4a8af634.jpg" 
                                  alt="Education program in Kenya" 
-                                 class="project-image">
-                            <div class="project-overlay">
-                                <div class="project-icon">
-                                    <i class="fas fa-graduation-cap"></i>
+                                 class="project-img">
+                            <div class="image-overlay-gradient"></div>
+                            <div class="project-category-tag">Education</div>
+                        </div>
+                        <div class="project-content-enhanced">
+                            <div class="project-header-content">
+                                <h4 class="project-title-enhanced">School Construction Program</h4>
+                                <div class="project-meta">
+                                    <span class="meta-item"><i class="fas fa-clock"></i> Ongoing</span>
+                                    <span class="meta-item"><i class="fas fa-users"></i> 5,000+ Beneficiaries</span>
                                 </div>
                             </div>
-                    </div>
-                        <div class="project-content">
-                            <h4 class="project-card-title">Education Program</h4>
-                            <p class="project-description">
-                                Transforming lives through quality education and hands-on learning practices. We build schools, train teachers, and provide practical skills training that empowers communities across Western Kenya.
+                            <p class="project-description-enhanced">
+                                Transforming lives through quality education and hands-on learning practices. We build modern schools equipped with libraries, computer labs, and sports facilities to create optimal learning environments.
                             </p>
-                            <div class="project-stats">
-                                <div class="stat-item">
-                                    <i class="fas fa-school"></i>
-                                    <span><strong>20+</strong> schools built</span>
+                            <div class="project-impact-grid">
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-school"></i>
+                                    </div>
+                                    <div class="impact-details">
+                                        <span class="impact-number">20+</span>
+                                        <span class="impact-label">Schools Built</span>
+                                    </div>
                                 </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-chalkboard-teacher"></i>
-                                    <span><strong>500+</strong> teachers trained</span>
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                    </div>
+                                    <div class="impact-details">
+                                        <span class="impact-number">500+</span>
+                                        <span class="impact-label">Teachers Trained</span>
+                                    </div>
                                 </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-graduation-cap"></i>
-                                    <span><strong>5,000+</strong> students reached</span>
+                                <div class="impact-item">
+                                    <div class="impact-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="impact-details">
+                                        <span class="impact-number">5,000+</span>
+                                        <span class="impact-label">Students Reached</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-footer-enhanced">
+                                <a href="western-kenya.html" class="project-cta-enhanced">
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span>Explore Kenya Projects</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Food Supply Program -->
+                        <div class="modern-project-card">
+                            <div class="project-image-enhanced">
+                                <img src="https://i.pinimg.com/564x/8a/9b/6c/8a9b6c6c8f4a4b8e9d9c7d5e8f8a8b.jpg" 
+                                     alt="Food supply program in Kenya" 
+                                     class="project-img">
+                                <div class="image-overlay-gradient"></div>
+                                <div class="project-category-tag">Food Security</div>
+                            </div>
+                            <div class="project-content-enhanced">
+                                <div class="project-header-content">
+                                    <h4 class="project-title-enhanced">Food Supply Program</h4>
+                                    <div class="project-meta">
+                                        <span class="meta-item"><i class="fas fa-clock"></i> Active</span>
+                                        <span class="meta-item"><i class="fas fa-users"></i> 2,000+ Families</span>
+                                    </div>
+                                </div>
+                                <p class="project-description-enhanced">
+                                    Ensuring food security and nutrition for vulnerable communities. Our comprehensive food supply initiatives provide essential nutrition support, sustainable farming solutions, and emergency food assistance to families in need across Kenya.
+                                </p>
+                                <div class="project-impact-grid">
+                                    <div class="impact-item">
+                                        <div class="impact-icon">
+                                            <i class="fas fa-utensils"></i>
+                                        </div>
+                                        <div class="impact-details">
+                                            <span class="impact-number">10,000+</span>
+                                            <span class="impact-label">Meals Monthly</span>
+                                        </div>
+                                    </div>
+                                    <div class="impact-item">
+                                        <div class="impact-icon">
+                                            <i class="fas fa-seedling"></i>
+                                        </div>
+                                        <div class="impact-details">
+                                            <span class="impact-number">500+</span>
+                                            <span class="impact-label">Families Supported</span>
+                                        </div>
+                                    </div>
+                                    <div class="impact-item">
+                                        <div class="impact-icon">
+                                            <i class="fas fa-heart"></i>
+                                        </div>
+                                        <div class="impact-details">
+                                            <span class="impact-number">2,000+</span>
+                                            <span class="impact-label">Children Fed</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project-footer-enhanced">
+                                    <a href="western-kenya.html" class="project-cta-enhanced">
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span>View All Kenya Projects</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     
-                    <!-- Food Supply Program -->
-                    <div class="project-card">
-                        <div class="project-image-container">
-                            <img src="images/foodsupply 2.jpg" 
-                                 alt="Food supply program in Kenya" 
-                                 class="project-image">
-                            <div class="project-overlay">
-                                <div class="project-icon">
-                                    <i class="fas fa-utensils"></i>
-                                </div>
-                            </div>
-                            </div>
-                        <div class="project-content">
-                            <h4 class="project-card-title">Food Supply Program</h4>
-                            <p class="project-description">
-                                Ensuring food security and nutrition for vulnerable communities. Our food supply initiatives provide essential nutrition support and sustainable food solutions to families in need across Kenya.
-                            </p>
-                            <div class="project-stats">
-                                <div class="stat-item">
-                                    <i class="fas fa-utensils"></i>
-                                    <span><strong>10,000+</strong> meals monthly</span>
-                            </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-seedling"></i>
-                                    <span><strong>500+</strong> families supported</span>
-                            </div>
-                                <div class="stat-item">
-                                    <i class="fas fa-heart"></i>
-                                    <span><strong>2,000+</strong> children fed</span>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="country-cta-section">
+                        <a href="western-kenya.html" class="country-cta-btn">
+                            <i class="fas fa-th-large"></i>
+                            <span>View All Kenya Projects</span>
+                        </a>
                     </div>
                 </div>
-                
-                <div class="project-footer">
-                    <a href="western-kenya.html" class="btn btn-primary">View All Kenya Projects</a>
-                </div>
-            </div>
 
             <!-- Uganda Projects -->
             <div class="project-section">
@@ -317,7 +1500,7 @@
                                 </div>
                                 <div class="stat-item">
                                     <i class="fas fa-users"></i>
-                                    <span><strong>15,000+</strong> people reached</span>
+                                    <span><strong>5,000+</strong> people reached</span>
                                 </div>
                             </div>
                         </div>
@@ -1011,7 +2194,58 @@
             }
         }
     </style>
-    <script src="main.js"></script>
+    <script>
+// Project Filter Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.featured-project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filter = this.getAttribute('data-filter');
+            
+            projectCards.forEach(card => {
+                if (filter === 'all') {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeInUp 0.5s ease-out';
+                } else {
+                    const cardCategory = card.getAttribute('data-category');
+                    if (cardCategory === filter) {
+                        card.style.display = 'block';
+                        card.style.animation = 'fadeInUp 0.5s ease-out';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+
+    // Animate progress bars on scroll
+    const progressBars = document.querySelectorAll('.progress-fill, .mini-progress-fill');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const bar = entry.target;
+                const width = bar.style.width;
+                bar.style.width = '0';
+                setTimeout(() => {
+                    bar.style.width = width;
+                }, 200);
+            }
+        });
+    });
+
+    progressBars.forEach(bar => observer.observe(bar));
+});
+</script>
+
+<script src="main.js"></script>
 </body>
 </html>
 

@@ -26,8 +26,8 @@
     <!-- Modern Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="about.html" class="logo">
-                <img src="../images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50">
+            <a href="index.html" class="logo">
+                <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
                 <span>Oseko Foundation</span>
             </a>
             
@@ -35,32 +35,253 @@
                 <span></span>
                 <span></span>
                 <span></span>
-        </div>
+            </div>
             
             <ul class="nav-menu">
                 <li><a href="about.html" class="nav-link active">About Us</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
             </ul>
-    </div>
-</nav>
+        </div>
+    </nav>
+
+<style>
+.hero {
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    color: white;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+    background-size: 50px 50px;
+    animation: float 20s infinite linear;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.stat-item {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+.cta-button {
+    background: linear-gradient(135deg, #ff6b35 0%, #f97316 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    
+    .stat-item {
+        width: 200px;
+        padding: 1rem 1.5rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-button, .btn-secondary {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+</style>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content animate-fade-in-up">
-            <h1 class="hero-title">Transforming Lives Across East Africa</h1>
-            <p class="hero-subtitle">As an East African based organization, we're dedicated to empowering communities in Kenya, Uganda, and Tanzania through sustainable development, education, and healthcare initiatives that create lasting change.</p>
-            <div class="hero-buttons">
-                <a href="donate.html" class="cta-button">
-                    <i class="fas fa-heart"></i> Make a Difference
-                </a>
-                <a href="projects.html" class="btn btn-secondary">
-                    <i class="fas fa-info-circle"></i> View Our Projects
-                </a>
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Oseko Foundation</h1>
+        <p class="hero-subtitle">Empowering East African communities since 2017 through sustainable development, education, healthcare, and clean water initiatives across Kenya, Uganda, and Tanzania.</p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number">7+</div>
+                <div class="stat-label">Years of Service</div>
             </div>
+            <div class="stat-item">
+                <div class="stat-number">5,000+</div>
+                <div class="stat-label">Lives Impacted</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Countries Served</div>
+            </div>
+        </div>
+        <div class="hero-buttons">
+            <a href="donate.html" class="cta-button">
+                <i class="fas fa-heart"></i> Support Our Mission
+            </a>
+            <a href="projects.html" class="btn btn-secondary">
+                <i class="fas fa-hands-helping"></i> View Our Work
+            </a>
+        </div>
     </div>
-    </section>
+</section>
 
     <!-- Impact Stats Section -->
     <!-- Impact Stats Section -->
@@ -109,13 +330,34 @@
             </div>
         </div>
         
-        <!-- Testimonial Quote -->
-        <div class="impact-testimonial">
-            <blockquote>
-                <p>"Oseko Foundation has transformed our community. My children now attend school, we have access to healthcare, and through their business training, I've started my own shop. This is real change that lasts for generations."</p>
-                <cite>— Amina Hassan, Beneficiary from Mombasa, Kenya</cite>
-            </blockquote>
+        <!-- Project Summary Section -->
+        <div class="project-summary mt-12">
+            <h3 class="text-center mb-8">Our Key Projects & Achievements</h3>
+            <div class="grid grid-3">
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h4>Education Initiative</h4>
+                    <p>Built 15+ schools, provided scholarships to 2,000+ students, and established learning centers in remote villages across Kenya and Uganda.</p>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <h4>Healthcare Access</h4>
+                    <p>Established 8+ mobile clinics, provided 25,000+ medical treatments, and trained 200+ community health workers in Tanzania.</p>
+                </div>
+                <div class="summary-card">
+                    <div class="summary-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h4>Clean Water Projects</h4>
+                    <p>Installed 30+ water purification systems, serving 50+ communities with clean drinking water and improved sanitation facilities.</p>
+                </div>
+            </div>
         </div>
+      
     </div>
 </section>
 
@@ -284,8 +526,8 @@
                 <div class="animate-fade-in-up">
                     <h2>Our Mission & Vision</h2>
                     <p class="text-lg mb-6">
-                        As an East African based organization, Oseko Foundation is driven by a passion to create positive, sustainable change in our region. 
-                        We believe in empowering communities to break the cycle of poverty and build a future filled with opportunity.
+                        Founded in 2017, Oseko Foundation is a registered Community Based Organization driven by a passion to create positive, sustainable change in East Africa. 
+                        We believe in empowering communities to break the cycle of poverty and build a future filled with opportunity through locally-led development initiatives.
                     </p>
                     
                     <div class="mission-points">
@@ -293,28 +535,28 @@
                             <i class="fas fa-tint"></i>
                             <div>
                                 <h4>Clean Water Access</h4>
-                                <p>Bringing safe and accessible water sources to underserved communities across East Africa</p>
+                                <p>Installing sustainable water systems and purification facilities to bring safe, accessible water to underserved communities across East Africa</p>
                             </div>
                         </div>
                         <div class="mission-point">
                             <i class="fas fa-heartbeat"></i>
                             <div>
                                 <h4>Healthcare Services</h4>
-                                <p>Delivering essential medical services and building local healthcare capacity</p>
+                                <p>Operating mobile health clinics and building local healthcare capacity to deliver essential medical services to remote communities</p>
                             </div>
                         </div>
                         <div class="mission-point">
                             <i class="fas fa-book"></i>
                             <div>
                                 <h4>Quality Education</h4>
-                                <p>Supporting quality education for children and adults alike in rural communities</p>
+                                <p>Building schools, training teachers, and providing educational resources to ensure every child has access to quality learning opportunities</p>
                             </div>
                         </div>
                         <div class="mission-point">
                             <i class="fas fa-leaf"></i>
                             <div>
                                 <h4>Environmental Sustainability</h4>
-                                <p>Implementing projects that ensure long-term community resilience and environmental protection</p>
+                                <p>Implementing reforestation projects and clean energy solutions to ensure long-term community resilience and environmental protection</p>
                             </div>
                         </div>
                     </div>
@@ -337,387 +579,621 @@
     </section>
 
     <!-- Our Story Section -->
-    <section class="section">
-        <div class="container">
-            <div class="grid grid-2 items-center gap-8">
-                <div>
-                    <img src="https://i.pinimg.com/564x/77/25/69/77256978e02f2603b790b4d8fc400bea.jpg" 
-                         alt="Our Story - Community Development" 
-                         class="rounded-lg shadow-lg">
-                </div>
-                <div>
-                    <h2>Our Story</h2>
-                    <p class="text-lg mb-4">
-                        “Founded in 2017, Oseko Foundation began as a grassroots initiative by East African community leaders who recognized the need for sustainable development solutions in our region. 
-                        What started as small community projects has grown into a comprehensive organization serving Kenya, Uganda, and Tanzania. 
-                        Today, we empower communities through sustainable development, education, and healthcare initiatives, working alongside partner organizations and other stakeholders to create lasting change.”
-                    </p>
-                    <p class="text-lg mb-6">
-                        Our deep understanding of local challenges, combined with our commitment to community-driven solutions, has enabled us to create lasting impact across East Africa. 
-                        We work directly with local communities, ensuring our programs are culturally appropriate and sustainable.
-                    </p>
-                    
-                    <div class="grid grid-3">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary mb-2">7+</div>
-                            <div class="text-gray-600">Years of Service</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary mb-2">3</div>
-                            <div class="text-gray-600">East African Countries</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-primary mb-2">100+</div>
-                            <div class="text-gray-600">Communities Served</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Programs Section -->
-    <section class="section bg-gray-100">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our core focus area</h2>
-                <p class="section-subtitle">Making a difference where it matters most across Kenya, Uganda, and Tanzania</p>
-            </div>
-            
-            <div class="grid grid-3">
-                <div class="card program-card animate-fade-in-up">
-                    <div class="program-gallery">
-                        <img src="https://i.pinimg.com/564x/89/5b/87/895b87afd3bddc00c609055539c3edae.jpg" 
-                             alt="Students in classroom learning" 
-                             class="program-image">
-                        <img src="https://i.pinimg.com/564x/77/25/69/77256978e02f2603b790b4d8fc400bea.jpg" 
-                             alt="Children in school uniforms" 
-                             class="program-image">
-                        <img src="https://i.pinimg.com/564x/11/a0/01/11a001d4d61c01d255aafc692ba55451.jpg" 
-                             alt="Hands-on craft learning" 
-                             class="program-image">
-                    </div>
-                    <div class="program-icon">
-                        <i class="fas fa-graduation-cap fa-3x"></i>
-                    </div>
-                    <h3>Education</h3>
-                    <p>Transforming lives through quality education, vocational training, and hands-on learning experiences. We build schools, train teachers, and provide practical skills training including sewing, crafts, and technical skills that empower communities across East Africa.</p>
-                    
-                    <a href="education.html" class="btn btn-primary">Learn More</a>
-                </div>
-                
-                <div class="card program-card animate-fade-in-up" style="animation-delay: 0.1s;">
-                    <div class="program-gallery">
-                        <img src="https://i.pinimg.com/564x/18/ed/8d/18ed8da8a58c50861f128a4579c0b151.jpg" 
-                             alt="Healthcare worker with child" 
-                             class="program-image">
-                        <img src="https://i.pinimg.com/564x/d6/54/49/d654491917a8ef5733318227b28971dd.jpg" 
-                             alt="Children receiving healthcare" 
-                             class="program-image">
-                        <img src="https://i.pinimg.com/564x/5c/03/9c/5c039c2b21a59455ea6537f48e391bab.jpg" 
-                             alt="Mobile healthcare services" 
-                             class="program-image">
-                    </div>
-                    <div class="program-icon">
-                        <i class="fas fa-heartbeat fa-3x"></i>
-                    </div>
-                    <h3>Healthcare</h3>
-                    <p>Providing lifesaving medical services, mobile health clinics, and essential healthcare infrastructure. We focus on maternal care, child health, disease prevention, and bringing medical services to the most remote communities across East Africa.</p>
-                    
-                    <a href="healthcare.html" class="btn btn-primary">Learn More</a>
-                </div>
-                
-                <div class="card program-card animate-fade-in-up" style="animation-delay: 0.2s;">
-                    <div class="program-gallery">
-                        <img src="https://i.pinimg.com/564x/cd/98/1d/cd981d4bc046a735e26ad89cc8857d94.jpg" 
-                             alt="Tree planting and reforestation" 
-                             class="program-image">
-                        <img src="https://i.pinimg.com/564x/53/55/23/5355234c5b2ccf8f0519274b672894b4.jpg" 
-                             alt="Solar power in schools" 
-                             class="program-image">
-                        <img src="https://i.pinimg.com/564x/70/b3/59/70b35997e08451564d12458acd8e1ed0.jpg" 
-                             alt="Environmental sustainability" 
-                             class="program-image">
-                    </div>
-                    <div class="program-icon">
-                        <i class="fas fa-leaf fa-3x"></i>
-                    </div>
-                    <h3>Environment</h3>
-                    <p>Protecting our planet through comprehensive environmental programs including reforestation, clean energy solutions, and climate education. We plant trees, install solar power systems, and educate communities about sustainable practices for a greener future.</p>
-                    <div class="education-stats">
-                        <div class="stat-item">
-                            <span class="stat-number"></span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number"></span>
-                        </div>
-                    </div>
-                    <a href="environment.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-
-    <!-- Testimonials Section -->
-    <!-- Our Commitment to Transparency Section -->
-<section class="section bg-gray-50">
-    <div class="container">
-        <div class="section-title">
-            <h2 style="color: #ff6b35;">Our Commitment to Transparency</h2>
-        </div>
-        
-        <div class="grid grid-3">
-            <div class="card text-center transparency-card">
-                <div class="transparency-icon">
-                    <div class="icon-circle orange">
-                        <i class="fas fa-file-alt"></i>
-                    </div>
-                </div>
-                <h3>Annual Impact Reports</h3>
-                <p>Every supporter receives a detailed annual report showing exactly how their contributions made a difference over the past 12 months, complete with photos, stories, and measurable outcomes.</p>
-            </div>
-            
-            <div class="card text-center transparency-card">
-                <div class="transparency-icon">
-                    <div class="icon-circle green">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                </div>
-                <h3>Proven Track Record</h3>
-                <p>Our recent annual fundraising gala raised over $150,000, demonstrating strong community support and our ability to efficiently manage and distribute funds to those in need.</p>
-            </div>
-            
-            <div class="card text-center transparency-card">
-                <div class="transparency-icon">
-                    <div class="icon-circle yellow">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                </div>
-                <h3>Registered Non-Profit</h3>
-                <p>Officially registered as a 501(c)(3) non-profit organization. All donations are tax-deductible, and we maintain full financial transparency with regular audits and public reporting.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
+    <!-- Team & Leadership Styles -->
 <style>
-.transparency-card {
-    padding: 2rem 1.5rem;
+.team-card {
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 2rem;
 }
 
-.transparency-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.transparency-icon {
-    margin-bottom: 1.5rem;
+.team-image {
+    height: 250px;
+    overflow: hidden;
 }
 
-.icon-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    font-size: 2rem;
-    color: white;
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: transform 0.3s ease;
 }
 
-.icon-circle.orange {
-    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+.team-card:hover .team-photo {
+    transform: scale(1.05);
 }
 
-.icon-circle.green {
-    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+.team-content {
+    padding: 2rem;
+    text-align: center;
 }
 
-.icon-circle.yellow {
-    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
-}
-
-.transparency-card h3 {
+.team-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #1f2937;
-    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    color: #ff6b35;
     font-weight: 600;
     margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
-.transparency-card p {
+.team-description {
     color: #6b7280;
     line-height: 1.6;
+    margin-bottom: 1.5rem;
     font-size: 0.95rem;
 }
 
-@media (max-width: 768px) {
-    .grid-3 {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-    
-    .transparency-card {
-        padding: 1.5rem;
-    }
-    
-    .icon-circle {
-        width: 70px;
-        height: 70px;
-        font-size: 1.75rem;
-    }
-}
-</style>
-
-<!-- Recent Fundraising Success Section -->
-<section class="section fundraising-success">
-    <div class="container">
-        <div class="section-title">
-            <h2>Recent Fundraising Success</h2>
-            <p class="success-description">
-                Our 2024 Annual Gala was a tremendous success, raising over <span class="highlight-amount">$150,000</span> to support our ongoing programs. This achievement reflects the strong trust our community has in our mission and our proven ability to deliver meaningful results.
-            </p>
-        </div>
-        
-        <div class="grid grid-3 success-stats">
-            <div class="success-card animate-fade-in-up" style="animation-delay: 0.1s;">
-                <div class="success-number">$150K+</div>
-                <div class="success-label">Raised at Annual Gala</div>
-            </div>
-            
-            <div class="success-card animate-fade-in-up" style="animation-delay: 0.2s;">
-                <div class="success-number">250+</div>
-                <div class="success-label">Attendees & Supporters</div>
-            </div>
-            
-            <div class="success-card animate-fade-in-up" style="animation-delay: 0.3s;">
-                <div class="success-number">100%</div>
-                <div class="success-label">Transparency Promise</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-.fundraising-success {
-    background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
-    color: white;
-    padding: 4rem 0;
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.fundraising-success .section-title {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.fundraising-success h2 {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
-}
-
-.success-description {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.highlight-amount {
-    color: #fbbf24;
-    font-weight: 700;
-}
-
-.success-stats {
-    gap: 2rem;
-}
-
-.success-card {
-    text-align: center;
-    padding: 2rem 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
+.team-social a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
     transition: all 0.3s ease;
 }
 
-.success-card:hover {
+.team-social a:hover {
+    background: #ff6b35;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.advisor-card {
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.advisor-card:hover {
     transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-.success-number {
-    font-size: 3rem;
+.advisor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+    overflow: hidden;
+    border: 2px solid #e5e7eb;
+}
+
+.advisor-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: #ff6b35;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    flex: 0 0 120px;
+    background: #ff6b35;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
     font-weight: 700;
-    color: #10b981;
-    margin-bottom: 0.5rem;
-    line-height: 1;
+    font-size: 1.2rem;
+    height: fit-content;
+    margin: 0 2rem;
 }
 
-.success-label {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 500;
-    line-height: 1.3;
+.timeline-content {
+    flex: 1;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+    left: -30px;
+    border-right-color: white;
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+    right: -30px;
+    border-left-color: white;
+}
+
+.timeline-content h3 {
+    color: #1f2937;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    color: #6b7280;
+    line-height: 1.6;
 }
 
 @media (max-width: 768px) {
-    .fundraising-success {
-        padding: 3rem 0;
+    .timeline::before {
+        left: 30px;
     }
     
-    .fundraising-success h2 {
-        font-size: 2rem;
+    .timeline-item {
+        flex-direction: column !important;
+        margin-left: 60px;
     }
     
-    .success-description {
-        font-size: 1rem;
-        padding: 0 1rem;
+    .timeline-year {
+        margin: 0 0 1rem 0;
+        width: 100px;
     }
     
-    .grid-3 {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+    .timeline-content::before {
+        left: -30px !important;
+        border-right-color: white !important;
+        border-left-color: transparent !important;
     }
     
-    .success-card {
-        padding: 1.5rem;
-    }
-    
-    .success-number {
-        font-size: 2.5rem;
-    }
-    
-    .success-label {
-        font-size: 1rem;
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .fundraising-success h2 {
-        font-size: 1.75rem;
+    .grid-4 {
+        grid-template-columns: 1fr;
     }
     
-    .success-number {
-        font-size: 2rem;
+    .timeline-item {
+        margin-left: 40px;
     }
     
-    .success-label {
-        font-size: 0.95rem;
+    .timeline::before {
+        left: 20px;
     }
 }
 </style>
 
+<!-- Team & Leadership Section -->
+<section class="section" style="padding-top: 2rem;">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Leadership Team</h2>
+            <p class="section-subtitle">Dedicated professionals committed to transforming East African communities</p>
+        </div>
+        
+        <div class="team-grid">
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="images/download (1).jfif" alt="Founder & Executive Director" class="team-photo">
+                </div>
+                <div class="team-content">
+                    <h3>Founder & Executive Director</h3>
+                    <p class="team-role">Visionary Leader</p>
+                    <p class="team-description">East African community development expert with over 15 years of experience in sustainable development and nonprofit management. Passionate about creating locally-led solutions that empower communities.</p>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="images/Living what you want is a beautiful day.jfif" alt="Programs Director" class="team-photo">
+                </div>
+                <div class="team-content">
+                    <h3>Programs Director</h3>
+                    <p class="team-role">Operations Lead</p>
+                    <p class="team-description">Expert in program design and implementation with extensive experience in education and healthcare initiatives across East Africa. Ensures quality and impact in all our projects.</p>
+                </div>
+            </div>
+            
+            <div class="team-card">
+                <div class="team-image">
+                    <img src="images/download.jfif" alt="Finance Director" class="team-photo">
+                </div>
+                <div class="team-content">
+                    <h3>Finance Director</h3>
+                    <p class="team-role">Financial Oversight</p>
+                    <p class="team-description">Certified accountant with nonprofit financial management expertise. Ensures transparency, accountability, and sustainable financial practices for all donor funds.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="advisory-board">
+            <h3 class="text-center mb-8">Advisory Board Members</h3>
+            <div class="advisors-grid">
+                <div class="advisor-card text-center">
+                    <div class="advisor-avatar">
+                        <img src="images/luxury is not loud_ It is intentional_.jfif" alt="Education Advisor" class="advisor-photo">
+                    </div>
+                    <h4>Education Advisor</h4>
+                    <p class="advisor-role">Former Ministry of Education official with expertise in curriculum development</p>
+                </div>
+                <div class="advisor-card text-center">
+                    <div class="advisor-avatar">
+                        <img src="images/creativity.jfif" alt="Healthcare Advisor" class="advisor-photo">
+                    </div>
+                    <h4>Healthcare Advisor</h4>
+                    <p class="advisor-role">Public health specialist with experience in community health programs</p>
+                </div>
+                <div class="advisor-card text-center">
+                    <div class="advisor-avatar">
+                        <img src="images/Professional Headshot.jfif" alt="Environmental Advisor" class="advisor-photo">
+                    </div>
+                    <h4>Environmental Advisor</h4>
+                    <p class="advisor-role">Conservation expert focused on sustainable development practices</p>
+                </div>
+                <div class="advisor-card text-center">
+                    <div class="advisor-avatar">
+                        <img src="images/Brand Story for Cygnus Asset Management.jfif" alt="Community Advisor" class="advisor-photo">
+                    </div>
+                    <h4>Community Advisor</h4>
+                    <p class="advisor-role">Grassroots community leader representing beneficiary interests</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.team-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.team-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.team-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-photo {
+    transform: scale(1.05);
+}
+
+.team-content {
+    padding: 1.5rem;
+}
+
+.team-content h3 {
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.team-role {
+    color: #ff6b35;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.team-description {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 0.9rem;
+}
+
+.advisory-board {
+    margin-top: 3rem;
+}
+
+.advisors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.advisor-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advisor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.advisor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 3px solid #f3f4f6;
+}
+
+.advisor-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.advisor-card h4 {
+    color: #1f2937;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.advisor-role {
+    color: #6b7280;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .advisors-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .team-image {
+        height: 200px;
+    }
+    
+    .advisor-avatar {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .advisors-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+    <!-- Vision & Goal Section -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Vision & Goals</h2>
+                <p class="section-subtitle">Our commitment to transforming East African communities</p>
+            </div>
+            
+            <div class="grid grid-2">
+                <div class="card">
+                    <div class="vision-content">
+                        <h3><i class="fas fa-eye text-primary"></i> Our Vision</h3>
+                        <p>To create thriving, self-sufficient communities across East Africa where every individual has access to quality education, healthcare, clean water, and economic opportunities.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="charity-goal">
+                        <h3><i class="fas fa-bullseye text-primary"></i> Our Goal</h3>
+                        <p>To transform 100,000+ lives across East Africa by 2030 through sustainable community development programs, focusing on education access, healthcare improvement, clean water initiatives, and economic empowerment opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline & Achievements Section -->
+    <section class="section bg-gray-100">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey & Key Achievements</h2>
+                <p class="section-subtitle">Milestones that mark our commitment to East African communities</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">2017</div>
+                    <div class="timeline-content">
+                        <h3>Foundation Established</h3>
+                        <p>Started as grassroots initiative with focus on education support in Western Kenya. Registered as Community Based Organization in Uganda.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2019</div>
+                    <div class="timeline-content">
+                        <h3>Program Expansion</h3>
+                        <p>Launched healthcare mobile clinics and water access projects. Expanded operations to Tanzania with community development programs.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2021</div>
+                    <div class="timeline-content">
+                        <h3>Major Impact Milestone</h3>
+                        <p>Reached 25,000+ beneficiaries across three countries. Established partnerships with 15+ local organizations and international donors.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2023</div>
+                    <div class="timeline-content">
+                        <h3>Sustainability Focus</h3>
+                        <p>Launched environmental conservation programs and solar energy projects. Received NGO verification and transparency awards.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>Record Impact Year</h3>
+                        <p>Served 50,000+ people, built 20+ schools, established 15+ health clinics. Annual fundraising gala raised $150,000+.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-year">2025</div>
+                    <div class="timeline-content">
+                        <h3>Excellence & Expansion Year</h3>
+                        <p>Launched digital transformation initiative reaching 10,000+ additional beneficiaries through mobile technology. Expanded clean water projects to serve 25+ new communities across East Africa. Strengthened financial transparency with real-time impact reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Enhanced Financial Transparency Section -->
+    <section class="section bg-gray-50">
+        <div class="container">
+            <div class="section-title">
+                <h2 style="color: #ff6b35;">Financial Transparency & Accountability</h2>
+                <p class="section-subtitle">Every dollar tracked, every impact measured, every donor respected</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card text-center transparency-card p-4">
+                    <div class="transparency-icon">
+                        <div class="icon-circle orange">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                    </div>
+                    <h3>Program Allocation</h3>
+                    <p><strong>85%</strong> of all donations go directly to programs and services for communities, ensuring maximum impact where it matters most.</p>
+                </div>
+                
+                <div class="card text-center transparency-card p-4">
+                    <div class="transparency-icon">
+                        <div class="icon-circle yellow">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                    </div>
+                    <h3>Annual Reports</h3>
+                    <p>Comprehensive annual reports with detailed financial statements, impact metrics, and success stories. Our verified reports:</p>
+                    <div class="report-links">
+                        <a href="#" class="report-link">
+                            <i class="fas fa-check-circle"></i> 2024 Annual Report <i class="fas fa-shield-alt text-green-500"></i>
+                        </a>
+                        <a href="#" class="report-link">
+                            <i class="fas fa-check-circle"></i> 2023 Annual Report <i class="fas fa-shield-alt text-green-500"></i>
+                        </a>
+                        <a href="#" class="report-link">
+                            <i class="fas fa-check-circle"></i> 2022 Annual Report <i class="fas fa-shield-alt text-green-500"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card text-center transparency-card p-4">
+                    <div class="transparency-icon">
+                        <div class="icon-circle yellow">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
+                    <h3>Verification & Compliance</h3>
+                    <p>Officially verified by the NGO Coordination Board in Uganda. Recognized on GlobalGiving, Benevity, and GuideStar platforms.</p>
+                    <div class="verification-badges">
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>NGO Verified</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Tax Exempt</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-check-circle"></i>
+                            <span>GlobalGiving Certified</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
     <!-- Urgent Appeal Section -->
     <section class="section bg-red-50">
         <div class="container">
@@ -733,7 +1209,7 @@
                     </div>
                     
                     <div class="appeal-stats">
-                        <p><strong>$550,000</strong> raised of <strong>$900,000</strong> goal</p>
+                        <p><strong>$253,400</strong> raised of <strong>$500,000</strong> goal</p>
                     </div>
                     
                     <a href="donate.html" class="btn btn-accent">Donate Now</a>
@@ -758,35 +1234,7 @@
             </div>
         </div>
     </section>
-
-    <!-- Transparency & Verification -->
-    <section class="section bg-gray-50">
-        <div class="container">
-            <div class="section-title">
-                <h2>Verification</h2>
-                <p class="section-subtitle">We are a Community Based Organization verified by the NGO Coordination Board in Uganda.</p>
-            </div>
-
-            <div class="grid grid-3">
-                <div class="card text-center">
-                    <i class="fas fa-badge-check fa-2x text-primary mb-3"></i>
-                    <h3>NGO Verification</h3>
-                    <p>Officially verified and in good standing. Recognition profiles on GlobalGiving, Benevity, and GuideStar.</p>
-                </div>
-                <div class="card text-center">
-                    <i class="fas fa-receipt fa-2x text-primary mb-3"></i>
-                    <h3>Financial Transparency</h3>
-                    <p>Annual summaries and program allocations published in our <a href="Donation Policy.html">Donation Policy</a>.</p>
-                </div>
-                <div class="card text-center">
-                    <i class="fas fa-images fa-2x text-primary mb-3"></i>
-                    <h3>Proof of Impact</h3>
-                    <p>Verified project photos, field reports, and partner attestations from churches, schools, and community groups.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -828,17 +1276,18 @@
                 </div>
                 
                 <!-- Contact Info -->
-                <div class="contact-info text-center">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
                     <p><strong>Main Office:</strong> Kampala, Uganda</p>
-                    <p><strong>NGO Reg:</strong> NGO/UG/0012345  
-                    <p>Email: <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
+                    <p><strong>NGO Registration:</strong> NGO/UG/0012345</p>
+                    <p><strong>Email:</strong> <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
                     <p class="mt-4">© 2025 Oseko Foundation. All rights reserved.</p>
                 </div>
 
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
+                <p>&copy; 2025 Oseko Foundation. All rights reserved.</p>
                 <div class="footer-links">
                     <a href="Privacy Policy.html">Privacy Policy</a>
                     <a href="Terms of Service.html">Terms of Service</a>
@@ -922,9 +1371,8 @@
             text-align: center;
             padding: 2rem;
             position: relative;
-            overflow: hidden;
         }
-        
+
         .program-gallery {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -1023,7 +1471,7 @@
         }
         
         .urgent-appeal {
-            background: linear-gradien
+            background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 100%);
             border-radius: 1rem;
             padding: 2rem;
             text-align: center;
@@ -1078,7 +1526,7 @@
             .grid-4 {
                 grid-template-columns: 1fr;
             }
-            t(135deg, #FEF2F2 0%, #FEE2E2 100%);
+            
             .mission-points {
                 gap: 1rem;
             }
@@ -1187,7 +1635,6 @@
                 height: 120px;
             }
         }
-}
 </style>
 <script src="main.js"></script>
 </body>

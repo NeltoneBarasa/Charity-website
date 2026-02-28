@@ -1,103 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Community Outreach - Oseko foundation</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <style>
-    body { font-family: 'Arial', sans-serif; padding-top: 64px; }
-    .hero-bg { background-size: cover; background-position: center; }
-    .overlay { background-color: rgba(0, 0, 0, 0.5); }
-    .font-fancy { font-family: 'Playfair Display', serif; }
-    .text-green-dark { color: #1b5e20; }
-    .bg-green-main { background-color: #2e7d32; }
-    .bg-green-hover:hover { background-color: #1b5e20; }
-  </style>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Outreach - Oseko Foundation</title>
+    <meta name="description" content="Learn about Oseko Foundation's community outreach programs that empower local communities through education, healthcare, and sustainable development initiatives across Africa.">
+    <meta name="keywords" content="community, Oseko Foundation, Africa, outreach, empowerment, development, local communities">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Modern CSS -->
+    <link rel="stylesheet" href="modern-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>">
 </head>
-<body class="bg-gray-100 text-gray-800">
 
-  <!-- Navigation Bar -->
-  <nav class="bg-white text-gray-800 p-4 shadow-md fixed top-0 left-0 right-0 z-50">
-    <div class="container mx-auto flex justify-between items-center">
-      <div class="flex items-center">
-        <img src="https://openui.fly.dev/openui/24x24.svg?text=🤝" alt="logo" class="h-10 w-10 rounded-full border-2 border-green-main" />
-        <a href="index.html" class="text-4xl font-bold text-green-main ml-2" style="font-family: 'Dancing Script', cursive;">Oseko Foundation</a>
-      </div>
-      <div class="space-x-8 ml-auto">
-        <a href="index.html" class="text-xl font-semibold text-gray-800 hover:text-green-main" style="font-family: 'Great Vibes', cursive;">Home</a>
-        <a href="about.html" class="text-xl font-semibold text-gray-800 hover:text-green-main" style="font-family: 'Great Vibes', cursive;">About</a>
-        <a href="donate.html" class="bg-green-main text-white text-xl px-4 py-2 rounded-full hover:bg-green-700 transition duration-300" style="font-family: 'Great Vibes', cursive;">Donate</a>
-        <a href="contact.html" class="text-xl font-semibold text-gray-800 hover:text-green-main" style="font-family: 'Great Vibes', cursive;">Contact</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero-section h-screen flex items-center justify-center bg-green-50">
-    <div class="flex flex-col md:flex-row items-center max-w-5xl mx-auto p-6 gap-8">
-      <div class="md:w-2/3 text-center md:text-left">
-        <h1 class="text-5xl md:text-6xl font-fancy font-bold text-green-dark mb-6">Empowering Communities for a Brighter Future</h1>
-        <p class="text-xl md:text-2xl text-gray-700 mb-8">Hope Givers partners with local communities to ensure lasting change through education, health, and development initiatives.</p>
-        <a href="donate.html" class="bg-green-main text-white px-8 py-4 rounded-full font-bold uppercase tracking-wide hover:bg-green-700 transition duration-300 ease-in-out text-lg md:text-xl">Get Involved</a>
-      </div>
-      <div class="md:w-1/3 flex justify-center">
-        <img src="https://i.pinimg.com/564x/20/45/96/204596064af2e8e9ad8ceac54b67be20.jpg" alt="Empowered Community" class="rounded-full w-64 h-64 shadow-lg">
-      </div>
-    </div>
-  </header>
-
-  <!-- Our Impact Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6 md:px-12">
-      <h2 class="text-4xl font-fancy font-bold text-green-dark mb-6 text-center">Our Impact on Communities</h2>
-      <p class="text-xl text-gray-700 mb-12 text-center max-w-2xl mx-auto">We work hand in hand with communities to create sustainable solutions that empower children and families to thrive. From education to health and economic development, our community programs are building brighter futures.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-        <div class="bg-white p-8 shadow-lg rounded-lg transition-transform transform hover:scale-105 border-t-4 border-green-main">
-          <img src="https://i.pinimg.com/564x/a2/2f/fc/a22ffcd59a108a48ababf0bec3cbbb1d.jpg" alt="Community Development" class="rounded-lg mb-6">
-          <h3 class="text-2xl font-fancy font-bold text-green-main mb-4">Education for All</h3>
-          <p class="text-lg text-gray-700">Through our programs, we’ve built schools, trained teachers, and supplied learning materials to ensure every child has access to quality education, especially in rural areas.</p>
+<body>
+    <!-- Modern Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="about.html" class="logo">
+                <img src="./images/oseko-logo.png" alt="Oseko Foundation Logo" class="logo-img" width="50" height="50" loading="eager">
+                <span>Oseko Foundation</span>
+            </a>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
+            </ul>
         </div>
-        <div class="bg-white p-8 shadow-lg rounded-lg transition-transform transform hover:scale-105 border-t-4 border-green-main">
-          <img src="https://i.pinimg.com/564x/3d/b5/ff/3db5ffba5c3077d861d6014f0122d0e3.jpg" alt="Healthcare Outreach" class="rounded-lg mb-6">
-          <h3 class="text-2xl font-fancy font-bold text-green-main mb-4">Health & Nutrition</h3>
-          <p class="text-lg text-gray-700">Our health outreach services bring life-saving medical care, vaccines, and nutritious food to vulnerable communities, ensuring that children grow up healthy and strong.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container text-center">
+            <h1 class="hero-title">Empowering Communities for a Brighter Future</h1>
+            <p class="hero-subtitle">
+                Oseko Foundation partners with local communities to ensure lasting change through education, health, and development initiatives. Together, we're building stronger, more resilient communities across Africa.
+            </p>
+            <div class="hero-buttons">
+                <a href="donate.html" class="cta-button">
+                    <i class="fas fa-hands-helping"></i> Get Involved
+                </a>
+                <a href="about.html" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i> Learn More
+                </a>
+            </div>
         </div>
-        <div class="bg-white p-8 shadow-lg rounded-lg transition-transform transform hover:scale-105 border-t-4 border-green-main">
-          <img src="https://i.pinimg.com/564x/e9/55/24/e95524d958d92b91b093b10d23e13620.jpg" alt="Economic Empowerment" class="rounded-lg mb-6">
-          <h3 class="text-2xl font-fancy font-bold text-green-main mb-4">Economic Empowerment</h3>
-          <p class="text-lg text-gray-700">By supporting local entrepreneurship and providing vocational training, we help families build sustainable livelihoods and lift themselves out of poverty.</p>
+    </section>
+
+    <!-- Our Impact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Impact on Communities</h2>
+                <p class="section-subtitle">We work hand in hand with communities to create sustainable solutions that empower children and families to thrive.</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card text-center animate-fade-in-up">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+                    </div>
+                    <h3>Education for All</h3>
+                    <p>Through our programs, we've built schools, trained teachers, and supplied learning materials to ensure every child has access to quality education, especially in rural areas.</p>
+                </div>
+                
+                <div class="card text-center animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heartbeat text-primary text-2xl"></i>
+                    </div>
+                    <h3>Health & Nutrition</h3>
+                    <p>Our health outreach services bring life-saving medical care, vaccines, and nutritious food to vulnerable communities, ensuring that children grow up healthy and strong.</p>
+                </div>
+                
+                <div class="card text-center animate-fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-coins text-primary text-2xl"></i>
+                    </div>
+                    <h3>Economic Empowerment</h3>
+                    <p>By supporting local entrepreneurship and providing vocational training, we help families build sustainable livelihoods and lift themselves out of poverty.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Volunteer Section -->
-  <section class="py-16 bg-green-50 text-gray-800 text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-5xl font-extrabold mb-6 font-serif text-green-dark">Become a Volunteer</h2>
-      <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
-        We believe that change starts with people like you. Whether you're passionate about teaching, healthcare, or community development, we welcome your time, talent, and dedication to make a lasting difference in the lives of children.
-      </p>
-      <a href="donate.html" class="bg-green-main text-white px-10 py-5 rounded-full font-bold uppercase tracking-wide hover:bg-green-700 transition duration-300 ease-in-out text-xl shadow-lg">
-        Support Us
-      </a>
-    </div>
-  </section>
+    <!-- Volunteer Section -->
+    <section class="section bg-gray-50">
+        <div class="container text-center">
+            <div class="section-title">
+                <h2>Become a Volunteer</h2>
+                <p class="section-subtitle">We believe that change starts with people like you.</p>
+            </div>
+            
+            <div class="card max-w-3xl mx-auto">
+                <p class="text-lg mb-8">
+                    Whether you're passionate about teaching, healthcare, or community development, we welcome your time, talent, and dedication to make a lasting difference in the lives of children.
+                </p>
+                <a href="donate.html" class="btn btn-primary btn-large">
+                    <i class="fas fa-hands-helping mr-2"></i> Support Us
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Community Stories Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6 md:px-12">
-      <h2 class="text-4xl font-fancy font-bold text-green-dark mb-12 text-center">Stories from the Field</h2>
+    <!-- Community Stories Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Stories from the Field</h2>
+                <p class="section-subtitle">Real impact from real communities</p>
+            </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div class="bg-white p-8 shadow-md rounded-lg border-l-4 border-green-main">
-          <div class="overflow-hidden rounded-full w-48 h-48 mx-auto mb-6">
-            <img src="https://i.pinimg.com/564x/9d/5d/a1/9d5da1c238f57e5aa0aab44a86febdc5.jpg" alt="Child Learning" class="object-cover w-full h-full"> 
-          </div>
+            <div class="grid grid-2">
+                <div class="card animate-fade-in-up">
+                    <img src="https://i.pinimg.com/564x/9d/5d/a1/9d5da1c238f57e5aa0aab44a86febdc5.jpg" 
+                         alt="Child Learning" 
+                         class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3>Education Transforms Lives</h3>
+                    <p>"Thanks to Oseko Foundation, our village now has a proper school. My daughter can read and write, and she dreams of becoming a doctor."</p>
+                    <p class="text-sm text-gray-600 mt-4">- Parent, Western Kenya</p>
+                </div>
+                
+                <div class="card animate-fade-in-up" style="animation-delay: 0.1s;">
+                    <img src="https://i.pinimg.com/564x/20/45/96/204596064af2e8e9ad8ceac54b67be20.jpg" 
+                         alt="Community Development" 
+                         class="rounded-lg mb-6 w-full h-48 object-cover">
+                    <h3>Healthy Communities, Bright Futures</h3>
+                    <p>"The mobile health clinic saved my child's life. We now have regular check-ups and health education in our community."</p>
+                    <p class="text-sm text-gray-600 mt-4">- Community Leader, Uganda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section bg-primary text-white">
+        <div class="container text-center">
+            <h2>Ready to Make a Difference?</h2>
+            <p class="section-subtitle">Join our community of changemakers and help create a better Africa</p>
+            
+            <div class="cta-buttons">
+                <a href="donate.html" class="btn btn-accent btn-large">
+                    <i class="fas fa-donate"></i> Donate Now
+                </a>
+                <a href="contact.html" class="btn btn-secondary btn-large">
+                    <i class="fas fa-hands-helping"></i> Get Involved
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Oseko Foundation</h3>
+                    <p>Transforming lives across Africa through sustainable development and community empowerment.</p>
+                    <div class="social-links">
+                        <a href="https://x.com/AidForHope" aria-label="Twitter">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/oseko_foundation?igsh=YzR3cmR5YXQ2emF6" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="healthcare.html">Healthcare</a></li>
+                        <li><a href="environment.html">Environment</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info text-center">
+                    <p><strong>Main Office:</strong> Kampala, Uganda</p>
+                    <p><strong>NGO Reg:</strong> NGO/UG/0012345</p>
+                    <p>Email: <a href="mailto:info@osekofoundation.org" class="text-primary hover:underline">info@osekofoundation.org</a></p>
+                    <p class="mt-4">© 2024 Oseko Foundation. All rights reserved.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oseko Foundation. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="Privacy Policy.html">Privacy Policy</a>
+                    <a href="Terms of Service.html">Terms of Service</a>
+                    <a href="Donation Policy.html">Donation Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="modern-script.js"></script>
+</body>
+</html>
           <h3 class="text-2xl font-bold text-green-main mb-4">A Brighter Future through Education</h3>
           <p class="text-lg text-gray-700">In rural Uganda, Oseko foundation has transformed education access. With new classrooms and teacher training, children like Amina now have the opportunity to learn and achieve their dreams.</p>
         </div>

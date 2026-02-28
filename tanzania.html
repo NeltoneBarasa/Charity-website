@@ -40,6 +40,7 @@
             <ul class="nav-menu">
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
                 <li><a href="donate.html" class="donate-btn">Donate Now</a></li>
             </ul>
@@ -47,124 +48,746 @@
 </nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="background: linear-gradient(135deg, #4ECDC4 0%, #45B7D1 50%, #FF6B6B 100%); padding-top: 120px; padding-bottom: 80px;">
-        <div class="container text-center">
-            <h1 class="hero-title">Tanzania - Empowering Communities</h1>
-            <p class="hero-subtitle">
+<section class="hero" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%); padding-top: 120px; padding-bottom: 80px; position: relative; overflow: hidden;">
+    <div class="container text-center">
+        <h1 class="hero-title">Tanzania - Empowering Communities</h1>
+        <p class="hero-subtitle">
             Our Tanzania program focuses on enhancing community resilience by promoting access to clean water, improving healthcare services, and advancing educational opportunities. We believe in empowering local communities for sustainable development.
         </p>
-            <div class="hero-buttons">
-                <a href="donate.html" class="cta-button">
-                    <i class="fas fa-heart"></i> Support Tanzania
-                </a>
-                <a href="about.html" class="btn btn-secondary">
-                    <i class="fas fa-info-circle"></i> Learn More
-                </a>
-            </div>
+        <div class="hero-buttons">
+            <a href="donate.html" class="cta-button">
+                <i class="fas fa-heart"></i> Support Tanzania
+            </a>
+            <a href="about.html" class="btn btn-secondary">
+                <i class="fas fa-info-circle"></i> Learn More
+            </a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Programs Overview Section -->
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Programs in Tanzania</h2>
-                <p class="section-subtitle">Comprehensive community development initiatives across the country</p>
-            </div>
+<!-- Programs Overview Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Programs in Tanzania</h2>
+            <p class="section-subtitle">Comprehensive community development initiatives across the country</p>
+        </div>
 
-            <div class="grid grid-4">
-                <div class="card text-center">
-                    <img src="https://i.pinimg.com/736x/2d/26/fa/2d26fabbef5cec1265627bef3ec62aa5.jpg" 
-                         alt="Water Access in Tanzania" 
-                         class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-tint text-primary text-2xl"></i>
+        <div class="grid grid-4">
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="images/water supply.jpg" alt="Water Access in Tanzania" class="program-photo">
+                </div>
+                <div class="program-content">
+                    <div class="program-icon water-icon">
+                        <i class="fas fa-tint"></i>
                     </div>
                     <h3>Water Access</h3>
-                    <p>Implementing sustainable water systems to ensure availability and accessibility</p>
+                    <p>Implementing sustainable water systems to ensure availability and accessibility for all communities.</p>
+                    <div class="program-stats">
+                        <div class="stat">
+                            <div class="stat-number">30+</div>
+                            <div class="stat-label">Water Systems</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card text-center">
-                    <img src="https://i.pinimg.com/564x/5c/03/9c/5c039c2b21a59455ea6537f48e391bab.jpg" 
-                         alt="Health Clinics in Tanzania" 
-                         class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-hospital text-primary text-2xl"></i>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="images/healthcare.jpg" alt="Health Clinics in Tanzania" class="program-photo">
+                </div>
+                <div class="program-content">
+                    <div class="program-icon health-icon">
+                        <i class="fas fa-hospital"></i>
                     </div>
                     <h3>Health Clinics</h3>
-                    <p>Establishing health clinics that provide essential health services to remote communities</p>
+                    <p>Establishing health clinics that provide essential health services to remote communities.</p>
+                    <div class="program-stats">
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Clinics Built</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card text-center">
-                    <img src="https://i.pinimg.com/236x/78/2a/43/782a4392f78b8f7df560330f473e993f.jpg" 
-                         alt="Educational Programs" 
-                         class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="images/Children schooling.jpg" alt="Educational Programs in Tanzania" class="program-photo">
+                </div>
+                <div class="program-content">
+                    <div class="program-icon education-icon">
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
                     <h3>Educational Programs</h3>
-                    <p>Enhancing learning environments through community-driven schools and scholarships</p>
+                    <p>Enhancing learning environments through community-driven schools and scholarships.</p>
+                    <div class="program-stats">
+                        <div class="stat">
+                            <div class="stat-number">18+</div>
+                            <div class="stat-label">Schools Supported</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-                <div class="card text-center">
-                    <img src="https://i.pinimg.com/564x/77/25/69/77256978e02f2603b790b4d8fc400bea.jpg" 
-                         alt="Community Workshops" 
-                         class="rounded-lg mb-4 w-full h-48 object-cover">
-                    <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-hands-helping text-primary text-2xl"></i>
-            </div>
+            
+            <div class="program-card">
+                <div class="program-image">
+                    <img src="images/women empowerment.jpg" alt="Community Workshops in Tanzania" class="program-photo">
+                </div>
+                <div class="program-content">
+                    <div class="program-icon community-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
                     <h3>Community Workshops</h3>
-                    <p>Educating families about hygiene and promoting better health outcomes</p>
-            </div>
+                    <p>Educating families about hygiene and promoting better health outcomes through training.</p>
+                    <div class="program-stats">
+                        <div class="stat">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Workshops Held</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<style>
+.program-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    position: relative;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.program-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+}
+
+.program-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.program-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.program-card:hover .program-photo {
+    transform: scale(1.05);
+}
+
+.program-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.program-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.program-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.3) 50%, transparent 70%);
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation: shimmer 3s infinite;
+}
+
+.water-icon {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.health-icon {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.education-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.community-icon {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.program-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2d3748;
+    text-align: center;
+}
+
+.program-content p {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.program-stats {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e2e8f0;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(45deg) translateX(100%);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(45deg) translateX(100%);
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .program-image {
+        height: 150px;
+    }
+    
+    .program-content {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+</style>
 
     <!-- Detailed Programs Section -->
-    <section class="section bg-gray-100">
-        <div class="container">
-            <div class="grid grid-2 gap-8">
-                <div>
-                    <h2>Our Key Programs in Tanzania</h2>
-                    <p class="text-lg mb-6">
-                We are committed to improving the living standards of Tanzanian communities through targeted initiatives aimed at access to water, sanitation, healthcare, and education. Our programs aim to create sustainable impact and promote self-sufficiency.
+<section class="section bg-gray-100">
+    <div class="container">
+        <div class="section-title">
+            <h2>🇹🇿 Tanzania Programs</h2>
+            <p class="section-subtitle">Sustainable solutions for climate-vulnerable communities</p>
+        </div>
+        
+        <div class="programs-intro">
+            <p class="text-lg">
+                Oseko Foundation is committed to improving living standards in underserved and climate-vulnerable regions of Tanzania, particularly in semi-arid and rural communities where access to clean water, healthcare, sanitation, and education remains limited. Our approach focuses on sustainable solutions that strengthen local capacity and promote long-term self-sufficiency.
             </p>
+        </div>
 
-                    <div class="space-y-6">
-                        <div>
-                            <h3 class="text-xl font-semibold mb-3">Water Access Projects</h3>
-                            <p class="text-gray-600">Implementing sustainable water systems to ensure availability and accessibility for all community members.</p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-xl font-semibold mb-3">Healthcare Services</h3>
-                            <p class="text-gray-600">Establishing health clinics that provide essential health services to remote communities across Tanzania.</p>
-                        </div>
-                        
-                        <div>
-                            <h3 class="text-xl font-semibold mb-3">Sanitation and Hygiene Training</h3>
-                            <p class="text-gray-600">Educating families about hygiene practices to promote better health outcomes and prevent disease.</p>
-                        </div>
+        <!-- Water Access Projects -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large water-icon">
+                    <i class="fas fa-tint"></i>
+                </div>
+                <div>
+                    <h3>💧 Water Access Projects</h3>
+                    <p>In many parts of central and northern Tanzania, prolonged droughts and unreliable rainfall force families to travel long distances for unsafe water.</p>
+                </div>
+            </div>
+            
+            <div class="program-details">
+                <div class="detail-grid">
+                    <div class="detail-card">
+                        <h4>Focus Areas</h4>
+                        <ul>
+                            <li>Dodoma Region (Chamwino & Kondoa districts)</li>
+                            <li>Singida Region</li>
+                            <li>Manyara Region (Simanjiro & Kiteto districts)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4>Our Interventions</h4>
+                        <ul>
+                            <li>Construction and rehabilitation of boreholes</li>
+                            <li>Installation of hand-pump and solar-powered water systems</li>
+                            <li>Community training on water management and maintenance</li>
+                        </ul>
                     </div>
                 </div>
                 
+                <div class="impact-note">
+                    <p>These projects reduce waterborne diseases, ease the burden on women and children, and restore dignity through reliable access to clean water.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Healthcare Services -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large health-icon">
+                    <i class="fas fa-hospital"></i>
+                </div>
                 <div>
-                    <h2>Healthcare Initiatives</h2>
-                    <p class="text-lg mb-6">
-                Our healthcare initiatives in Tanzania aim to enhance community health through awareness programs, vaccinations, and maternal healthcare services. Mobile health teams reach isolated areas to provide necessary care and education.
-            </p>
-                    
-                    <div class="space-y-4">
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-syringe text-primary"></i>
-                            </div>
-                            <div>
-                                <h4>Vaccination Campaigns</h4>
-                                <p class="text-gray-600">Increasing immunization rates among children to prevent diseases</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 p-3 rounded-full mr-4">
-                                <i class="fas fa-baby text-primary"></i>
-                            </div>
+                    <h3>🏥 Healthcare Services</h3>
+                    <p>Access to healthcare remains a major challenge in remote Tanzanian communities, where clinics are scarce and distances are long.</p>
+                </div>
+            </div>
+            
+            <div class="program-details">
+                <div class="target-regions">
+                    <h4>Target Regions:</h4>
+                    <div class="regions-grid">
+                        <span class="region-tag">Tabora</span>
+                        <span class="region-tag">Shinyanga</span>
+                        <span class="region-tag">Rural Dodoma</span>
+                        <span class="region-tag">Rural Singida</span>
+                    </div>
+                </div>
+                
+                <div class="key-actions">
+                    <h4>Key Actions:</h4>
+                    <ul>
+                        <li>Supporting the establishment of basic rural health clinics</li>
+                        <li>Providing essential medical supplies</li>
+                        <li>Partnering with local health workers to strengthen service delivery</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sanitation and Hygiene Training -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large sanitation-icon">
+                    <i class="fas fa-soap"></i>
+                </div>
+                <div>
+                    <h3>🚿 Sanitation and Hygiene Training</h3>
+                    <p>Poor sanitation and limited hygiene awareness contribute significantly to preventable illnesses, particularly among children.</p>
+                </div>
+            </div>
+            
+            <div class="program-details">
+                <div class="focus-areas">
+                    <h4>Our Sanitation Programs Focus On:</h4>
+                    <ul>
+                        <li>Hygiene education for families and schoolchildren</li>
+                        <li>Training on safe waste disposal and handwashing practices</li>
+                        <li>Community-led initiatives to improve sanitation facilities</li>
+                    </ul>
+                </div>
+                
+                <div class="impact-note">
+                    <p>These efforts are especially active in water-scarce communities where sanitation challenges are most severe.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Healthcare Initiatives -->
+        <div class="program-section">
+            <div class="program-header">
+                <div class="program-icon-large initiatives-icon">
+                    <i class="fas fa-heartbeat"></i>
+                </div>
+                <div>
+                    <h3>🩺 Healthcare Initiatives</h3>
+                    <p>Our healthcare initiatives aim to improve overall community health through prevention, awareness, and outreach, with a strong focus on vulnerable groups.</p>
+                </div>
+            </div>
+            
+            <div class="initiatives-grid">
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-ambulance"></i>
+                    </div>
+                    <h4>🚑 Mobile Health Outreach</h4>
+                    <p>Mobile health teams reach isolated villages in regions such as Singida, Tabora, and Manyara, delivering care where permanent facilities are unavailable.</p>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h4>💉 Vaccination Campaigns</h4>
+                    <ul>
+                        <li>Increasing childhood immunization coverage</li>
+                        <li>Supporting outreach vaccination drives in hard-to-reach areas</li>
+                        <li>Reducing preventable diseases among children under five</li>
+                    </ul>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h4>🤱 Maternal Health Services</h4>
+                    <ul>
+                        <li>Antenatal and postnatal care support</li>
+                        <li>Health education for pregnant women and new mothers</li>
+                        <li>Referrals to nearby health facilities when needed</li>
+                    </ul>
+                </div>
+                
+                <div class="initiative-card">
+                    <div class="initiative-icon">
+                        <i class="fas fa-book-medical"></i>
+                    </div>
+                    <h4>📚 Health Education</h4>
+                    <ul>
+                        <li>Community awareness sessions on disease prevention</li>
+                        <li>Nutrition and maternal health education</li>
+                        <li>Promotion of healthy living and early healthcare-seeking behavior</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+.programs-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.program-section {
+    background: white;
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.program-section:hover {
+    transform: translateY(-5px);
+}
+
+.program-header {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.program-icon-large {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.water-icon {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+.health-icon {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+.sanitation-icon {
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+.initiatives-icon {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.program-header h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.program-header p {
+    color: #718096;
+    line-height: 1.6;
+}
+
+.detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.detail-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+.detail-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.detail-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-card li {
+    padding: 0.5rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.detail-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+.regions-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.region-tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.key-actions {
+    margin-top: 2rem;
+}
+
+.key-actions h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.key-actions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.key-actions li {
+    padding: 0.75rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.key-actions li::before {
+    content: "🏥";
+    position: absolute;
+    left: 0;
+}
+
+.focus-areas h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.focus-areas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.focus-areas li {
+    padding: 0.75rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 2rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.focus-areas li::before {
+    content: "🚿";
+    position: absolute;
+    left: 0;
+}
+
+.impact-note {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #43e97b;
+    margin-top: 2rem;
+}
+
+.impact-note p {
+    color: #2d3748;
+    font-weight: 500;
+    margin: 0;
+}
+
+.initiatives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.initiative-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.initiative-card:hover {
+    transform: translateY(-5px);
+    border-color: #667eea;
+}
+
+.initiative-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.initiative-card h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.initiative-card p {
+    color: #718096;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.initiative-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.initiative-card li {
+    padding: 0.5rem 0;
+    color: #718096;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.initiative-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #667eea;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .program-section {
+        padding: 2rem;
+    }
+    
+    .program-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .initiatives-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .regions-grid {
+        justify-content: center;
+    }
+}
+</style>
                             <div>
                                 <h4>Maternal Health Services</h4>
                                 <p class="text-gray-600">Offering support and care for pregnant women and new mothers</p>
